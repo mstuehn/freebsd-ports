@@ -1,23 +1,24 @@
 # $FreeBSD$
 
 PORTNAME=	libpru
-PORTVERSION=	0.4
+PORTVERSION=	g20180830
 CATEGORIES=	devel
-MASTER_SITES=	https://bitbucket.org/rpaulo/libpru/get/
 
-MAINTAINER=	ports@FreeBSD.org
+USE_GITHUB=     yes
+GH_ACCOUNT=     mstuehn
+GH_PROJECT=     libpru
+GH_TAGNAME=	93f2f62
+
+
+MAINTAINER=	freebsd@justmail.de
 COMMENT=	Library to interface with PRUs
 
 LICENSE=	BSD2CLAUSE
 
 IGNORE_DragonFly=	only supported on FreeBSD
-BROKEN_mips=	Does not build: unrecognized command line option -Weverything
-BROKEN_mips64=	Does not build: unrecognized command line option -Weverything
-BROKEN_powerpc64=	Does not build: unrecognized command line option -Weverything
-BROKEN_sparc64=	Does not build: unrecognized command line option -Weverything
+ONLY_FOR_ARCHS= armv6 armv7
+ONLY_FOR_ARCHS_REASON= PRU devices only available on Texas Instruments ARM CPUs
 
 USES=		cmake
-
-WRKSRC=		${WRKDIR}/rpaulo-libpru-5a74157b82b8
 
 .include <bsd.port.mk>

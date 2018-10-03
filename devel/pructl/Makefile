@@ -1,12 +1,16 @@
 # $FreeBSD$
 
 PORTNAME=	pructl
-PORTVERSION=	0.2
-PORTREVISION=	1
+PORTVERSION=	g20180830
+#PORTREVISION=	0
 CATEGORIES=	devel
-MASTER_SITES=	https://bitbucket.org/rpaulo/pructl/get/
 
-MAINTAINER=	ports@FreeBSD.org
+USE_GITHUB=     yes
+GH_ACCOUNT=     mstuehn
+GH_PROJECT=	pructl
+GH_TAGNAME=	6b66250
+
+MAINTAINER=	freebsd@justmail.de	
 COMMENT=	Utilities to interface with PRUs
 
 LICENSE=	BSD2CLAUSE
@@ -14,7 +18,5 @@ LICENSE=	BSD2CLAUSE
 LIB_DEPENDS=	libpru.so:devel/libpru
 
 USES=		cmake libedit
-
-WRKSRC=		${WRKDIR}/rpaulo-pructl-ef9fa544e6a3
 
 .include <bsd.port.mk>
