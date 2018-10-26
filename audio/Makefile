@@ -563,8 +563,6 @@
     SUBDIR += mpg321
     SUBDIR += mpiosh
     SUBDIR += mps
-    SUBDIR += msbcg729
-    SUBDIR += msilbc
     SUBDIR += mumble
     SUBDIR += murmur
     SUBDIR += musepack
@@ -642,6 +640,7 @@
     SUBDIR += paprefs
     SUBDIR += patchage
     SUBDIR += pavucontrol
+    SUBDIR += pavucontrol-qt
     SUBDIR += pavumeter
     SUBDIR += pc-mixer
     SUBDIR += pd
@@ -733,6 +732,7 @@
     SUBDIR += ripit
     SUBDIR += ripperx
     SUBDIR += rkr-lv2
+    SUBDIR += rnnoise-nu
     SUBDIR += rosegarden
     SUBDIR += rplay
     SUBDIR += rsynth
@@ -789,6 +789,7 @@
     SUBDIR += spc2it
     SUBDIR += specimen
     SUBDIR += spectrogram
+    SUBDIR += speech-denoiser-lv2
     SUBDIR += speex
     SUBDIR += speexdsp
     SUBDIR += spek

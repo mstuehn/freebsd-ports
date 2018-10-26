@@ -56,6 +56,7 @@
     SUBDIR += R-cran-gpclib
     SUBDIR += R-cran-gss
     SUBDIR += R-cran-gtable
+    SUBDIR += R-cran-haven
     SUBDIR += R-cran-igraph
     SUBDIR += R-cran-influenceR
     SUBDIR += R-cran-inline
@@ -216,6 +217,7 @@
     SUBDIR += galculator
     SUBDIR += gambit
     SUBDIR += gap
+    SUBDIR += gau2grid
     SUBDIR += gdcalc
     SUBDIR += geg
     SUBDIR += geogebra
@@ -473,6 +475,7 @@
     SUBDIR += openblas
     SUBDIR += openfst
     SUBDIR += openlibm
+    SUBDIR += openmesh
     SUBDIR += opensolaris-libm
     SUBDIR += orpie
     SUBDIR += p5-AI-DecisionTree
@@ -692,6 +695,7 @@
     SUBDIR += py-fiat
     SUBDIR += py-fpconst
     SUBDIR += py-gato
+    SUBDIR += py-gau2grid
     SUBDIR += py-gimmik
     SUBDIR += py-gmpy
     SUBDIR += py-gmpy2
