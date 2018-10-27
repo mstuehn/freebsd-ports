@@ -1,6 +1,6 @@
---- configure.ac.orig	2017-08-16 09:52:10 UTC
+--- configure.ac.orig	2018-10-27 10:53:59 UTC
 +++ configure.ac
-@@ -397,7 +397,8 @@ case "$build_crypto" in
+@@ -402,7 +402,8 @@ case "$build_crypto" in
        ;;
  
     openssl)
@@ -10,19 +10,3 @@
        ;;
  esac
  AM_CONDITIONAL([HAVE_CRYPTO_GNUTLS], [test "${build_crypto}" = "gnutls"])
-@@ -466,7 +467,6 @@ AC_HEADER_TIME
- AC_CHECK_HEADERS([ \
- execinfo.h \
- mcheck.h \
--sys/inotify.h \
- sys/signalfd.h \
- sys/types.h \
- sys/param.h \
-@@ -4605,6 +4605,7 @@ EFL_ADD_LIBS([EIO], [-lm])
- ### Checks for linker characteristics
- 
- ### Checks for library functions
-+ac_cv_header_sys_inotify_h="no"
- have_inotify="${ac_cv_header_sys_inotify_h}"
- AM_CONDITIONAL([HAVE_INOTIFY], [test "x${have_inotify}" = "xyes"])
- 

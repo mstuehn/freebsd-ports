@@ -2,8 +2,8 @@
 # $FreeBSD$
 
 PORTNAME=	efl
-DISTVERSION=	1.20.7
-PORTREVISION=	3
+DISTVERSION=	1.21.1
+PORTREVISION=	0
 CATEGORIES=	devel enlightenment
 MASTER_SITES=	http://download.enlightenment.org/rel/libs/${PORTNAME}/
 DIST_SUBDIR=	enlightenment
@@ -143,6 +143,7 @@ OPENGLES_CONFIGURE_ON=		--with-opengl=es --enable-egl
 
 SDL_USE=			SDL=sdl2
 SDL_CONFIGURE_ENABLE=		sdl
+
 
 .include <bsd.port.options.mk>
 
