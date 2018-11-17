@@ -1,6 +1,6 @@
 # $FreeBSD$
 
-PORTNAME=	libpru
+PORTNAME=	libpru2
 PORTVERSION=	g20181116
 CATEGORIES=	devel
 
