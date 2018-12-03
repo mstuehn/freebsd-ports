@@ -497,6 +497,7 @@
     SUBDIR += moodle33
     SUBDIR += moodle34
     SUBDIR += moodle35
+    SUBDIR += moodle36
     SUBDIR += mozplugger
     SUBDIR += multisort
     SUBDIR += multiwatch
@@ -2053,7 +2054,6 @@
     SUBDIR += rubygem-http
     SUBDIR += rubygem-http-cookie
     SUBDIR += rubygem-http-form_data
-    SUBDIR += rubygem-http-form_data1
     SUBDIR += rubygem-http_router
     SUBDIR += rubygem-httparty
     SUBDIR += rubygem-httpclient
