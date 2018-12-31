@@ -511,7 +511,7 @@
     SUBDIR += knavalbattle-kde4
     SUBDIR += knetwalk
     SUBDIR += knetwalk-kde4
-    SUBDIR += knights-kde4
+    SUBDIR += knights
     SUBDIR += kobodeluxe
     SUBDIR += kolf
     SUBDIR += kolf-kde4
@@ -642,7 +642,6 @@
     SUBDIR += minilens
     SUBDIR += mirrormagic
     SUBDIR += miscom
-    SUBDIR += mkgichessclub
     SUBDIR += mkhexgrid
     SUBDIR += moagg
     SUBDIR += monster-masher

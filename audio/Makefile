@@ -23,7 +23,7 @@
     SUBDIR += alsa-sndio
     SUBDIR += alsa-utils
     SUBDIR += alure
-    SUBDIR += amarok-kde4
+    SUBDIR += amarok
     SUBDIR += amb-plugins
     SUBDIR += ample
     SUBDIR += amsynth
@@ -297,6 +297,7 @@
     SUBDIR += gstreamer1-plugins-jack
     SUBDIR += gstreamer1-plugins-ladspa
     SUBDIR += gstreamer1-plugins-lame
+    SUBDIR += gstreamer1-plugins-lv2
     SUBDIR += gstreamer1-plugins-modplug
     SUBDIR += gstreamer1-plugins-mpg123
     SUBDIR += gstreamer1-plugins-musepack
@@ -333,6 +334,7 @@
     SUBDIR += hs-OpenAL
     SUBDIR += hs-libmpd
     SUBDIR += hts_engine-API
+    SUBDIR += hvl2wav
     SUBDIR += hydrogen
     SUBDIR += icecast
     SUBDIR += icecast-kh
@@ -524,6 +526,7 @@
     SUBDIR += mixmos
     SUBDIR += mixxx
     SUBDIR += mixxx20
+    SUBDIR += mixxx21
     SUBDIR += mma
     SUBDIR += moc
     SUBDIR += modplugplay

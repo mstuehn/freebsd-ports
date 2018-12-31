@@ -579,7 +579,7 @@
     SUBDIR += knutclient-kde4
     SUBDIR += kops
     SUBDIR += krename
-    SUBDIR += kshutdown-kde4
+    SUBDIR += kshutdown
     SUBDIR += ksysguardd-kde4
     SUBDIR += ksystemlog
     SUBDIR += ksystemlog-kde4
@@ -890,7 +890,6 @@
     SUBDIR += pear-I18Nv2
     SUBDIR += pear-Log
     SUBDIR += pear-Translation2
-    SUBDIR += pecl-mogilefs
     SUBDIR += pecl-proctitle
     SUBDIR += pefs-kmod
     SUBDIR += personality

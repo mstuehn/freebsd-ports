@@ -100,7 +100,6 @@
     SUBDIR += dovecot-pigeonhole04
     SUBDIR += dovecot22
     SUBDIR += drac
-    SUBDIR += dracmail
     SUBDIR += dspam
     SUBDIR += ecartis
     SUBDIR += elm
@@ -481,8 +480,6 @@
     SUBDIR += pear-Net_IMAP
     SUBDIR += pear-Net_LMTP
     SUBDIR += pecl-mailparse
-    SUBDIR += pecl-mailparse2
-    SUBDIR += pecl-pop3
     SUBDIR += perdition
     SUBDIR += pflogsumm
     SUBDIR += pfqueue
@@ -637,6 +634,7 @@
     SUBDIR += rubygem-ruby-qmail
     SUBDIR += rubygem-tmail
     SUBDIR += rubygem-vmail
+    SUBDIR += s-nail
     SUBDIR += sa-stats
     SUBDIR += sa-utils
     SUBDIR += scam-backscatter

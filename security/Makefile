@@ -822,7 +822,6 @@
     SUBDIR += pear-LiveUser_Admin
     SUBDIR += pear-Net_Portscan
     SUBDIR += pear-Text_Password
-    SUBDIR += pecl-crack
     SUBDIR += pecl-crypto
     SUBDIR += pecl-gnupg
     SUBDIR += pecl-krb5
@@ -832,11 +831,11 @@
     SUBDIR += pecl-scrypt
     SUBDIR += pecl-ssh2
     SUBDIR += pecl-ssh2-0
+    SUBDIR += peda
     SUBDIR += pev
     SUBDIR += pgpdump
     SUBDIR += pgpgpg
     SUBDIR += pgpin
-    SUBDIR += php-suhosin
     SUBDIR += php56-filter
     SUBDIR += php56-hash
     SUBDIR += php56-mcrypt
@@ -853,7 +852,6 @@
     SUBDIR += php73-hash
     SUBDIR += php73-openssl
     SUBDIR += php73-sodium
-    SUBDIR += phpdeadlock
     SUBDIR += phpsecinfo
     SUBDIR += pidentd
     SUBDIR += pidgin-encryption
@@ -1057,7 +1055,6 @@
     SUBDIR += py-vulndb
     SUBDIR += py-yara
     SUBDIR += py-yubikey-manager
-    SUBDIR += py-yubioath-desktop
     SUBDIR += py-zope.app.authentication
     SUBDIR += py-zope.app.localpermission
     SUBDIR += py-zope.app.principalannotation
@@ -1361,8 +1358,10 @@
     SUBDIR += ykclient
     SUBDIR += ykpers
     SUBDIR += yubico-piv-tool
+    SUBDIR += yubikey-manager-qt
     SUBDIR += yubikey-personalization-gui
     SUBDIR += yubikey-piv-manager
+    SUBDIR += yubioath-desktop
     SUBDIR += zebedee
     SUBDIR += zenmap
     SUBDIR += zeronet

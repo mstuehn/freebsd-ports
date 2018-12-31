@@ -60,6 +60,7 @@
     SUBDIR += fpdf
     SUBDIR += freetype
     SUBDIR += freetype2
+    SUBDIR += frescobaldi
     SUBDIR += ft2demos
     SUBDIR += ghostscript7-base
     SUBDIR += ghostscript7-commfont
@@ -158,9 +159,7 @@
     SUBDIR += pdfstitch
     SUBDIR += pdftk
     SUBDIR += pear-File_PDF
-    SUBDIR += pecl-haru
     SUBDIR += pecl-pdflib
-    SUBDIR += pecl-ps
     SUBDIR += pfbtopfa
     SUBDIR += photoprint
     SUBDIR += pic2fig

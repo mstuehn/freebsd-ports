@@ -968,17 +968,12 @@
     SUBDIR += pear-XML_RPC
     SUBDIR += pear-XML_RPC2
     SUBDIR += pecl-amqp
-    SUBDIR += pecl-apn
     SUBDIR += pecl-geoip
-    SUBDIR += pecl-ip2location
-    SUBDIR += pecl-mosquitto
-    SUBDIR += pecl-oauth
     SUBDIR += pecl-oauth2
     SUBDIR += pecl-radius
     SUBDIR += pecl-rdkafka
     SUBDIR += pecl-smbclient
     SUBDIR += pecl-yaz
-    SUBDIR += pecl-yp
     SUBDIR += pecl-zmq
     SUBDIR += pen
     SUBDIR += pfinger
@@ -1137,6 +1132,7 @@
     SUBDIR += py-socketio-client
     SUBDIR += py-softlayer
     SUBDIR += py-speedtest-cli
+    SUBDIR += py-sshtunnel
     SUBDIR += py-sshuttle
     SUBDIR += py-stomp.py
     SUBDIR += py-suds
@@ -1168,6 +1164,7 @@
     SUBDIR += qoauth-qt5
     SUBDIR += qt4-network
     SUBDIR += qt5-network
+    SUBDIR += qt5-networkauth
     SUBDIR += qtweetlib
     SUBDIR += quagga
     SUBDIR += queso

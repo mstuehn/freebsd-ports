@@ -2,7 +2,6 @@
 
 PORTNAME=	breeze
 DISTVERSION=	${KDE_PLASMA_VERSION}
-PORTREVISION=	1
 CATEGORIES=	x11-themes kde kde-plasma
 PKGNAMESUFFIX=	-kde4
 
@@ -15,9 +14,11 @@ LICENSE_FILE=	${WRKSRC}/COPYING
 DEPRECATED=	KDE4 is EOL upstream
 EXPIRATION_DATE=	2018-12-31
 
+LIB_DEPENDS=	libfftw3_threads.so:math/fftw3
+
 CMAKE_ON=	USE_KDE4
 
-USES=		cmake:outsource compiler:c++11-lang cpe gettext \
+USES=		cmake compiler:c++11-lang cpe gettext \
 		kde:4 pkgconfig qt:4 tar:xz
 USE_KDE=	kdelibs automoc4
 USE_QT=		corelib dbus gui svg \
