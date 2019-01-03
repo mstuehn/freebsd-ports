@@ -1,13 +1,13 @@
 # $FreeBSD$
 
 PORTNAME=	libpru2
-PORTVERSION=	g20181116
+PORTVERSION=	g20190103
 CATEGORIES=	devel
 
 USE_GITHUB=     yes
 GH_ACCOUNT=     mstuehn
 GH_PROJECT=     libpru
-GH_TAGNAME=	fae9145
+GH_TAGNAME=	5c1c083
 
 
 MAINTAINER=	freebsd@justmail.de
