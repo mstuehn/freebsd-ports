@@ -1,0 +1,22 @@
+#!/bin/sh
+#
+# PROVIDE: bell
+# REQUIRE: networking
+# KEYWORD:
+
+. /etc/rc.subr
+
+name="bell"
+rcvar="bell_enable"
+#bell_user="bell"
+bell_command="%%PREFIX%%/bin/bell"
+bell_workdir="%%PREFIX%%/share/bell"
+pidfile="/var/run/${name}.pid"
+command="/usr/sbin/daemon"
+command_args="-P ${pidfile} -r -f ${bell_command}"
+
+load_rc_config $name
+: ${bell_enable:=no}
+
+run_rc_command "$1"
+

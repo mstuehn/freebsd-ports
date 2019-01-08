@@ -1,4 +1,4 @@
 bin/bell
-share/bell/DoorBell.wav
-share/bell/config.json
+etc/doorbell/config.json
+share/doorbell/DoorBell.wav
 /boot/dtb/overlays/ti_pruss.dtbo

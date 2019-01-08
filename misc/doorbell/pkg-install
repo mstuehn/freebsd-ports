@@ -1,0 +1,10 @@
+#!/bin/sh
+
+case $2 in
+POST-INSTALL)
+	echo 'fdt_overlays="ti_pruss.dtbo"' >> /boot/loader.conf
+	sysrc doorbell_enable=yes
+	echo 'hw.snd.latency="1"' >> /etc/sysctl.conf
+	exit 0
+	;;
+esac
