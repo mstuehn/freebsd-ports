@@ -7,7 +7,7 @@ CATEGORIES=	misc
 USE_GITHUB=     yes
 GH_ACCOUNT=     mstuehn
 GH_PROJECT=    	doorbell 
-GH_TAGNAME=	5130fa2
+GH_TAGNAME=	4525453
 
 MAINTAINER=	freebsd@justmail.de
 COMMENT=	Application for playing doorbell sound on bbb
@@ -28,11 +28,11 @@ USE_RC_SUBR=	${PORTNAME:S/-/_/}
 
 do-install:
 	${MKDIR} ${STAGEDIR}/boot/dtb/overlays
-	${MKDIR} ${STAGEDIR}/${PREFIX}/share/doorbell/
-	${MKDIR} ${STAGEDIR}/${PREFIX}/etc/doorbell/
-	${INSTALL_PROGRAM} ${WRKSRC}/src/bell ${STAGEDIR}/${PREFIX}/bin
 	${INSTALL_KLD} ${WRKSRC}/overlays/ti_pruss.dtbo ${STAGEDIR}/boot/dtb/overlays/
+	${MKDIR} ${STAGEDIR}/${PREFIX}/share/doorbell/
 	${INSTALL_DATA} ${WRKSRC}/src/DoorBell.wav ${STAGEDIR}/${PREFIX}/share/doorbell/
+	${MKDIR} ${STAGEDIR}/${PREFIX}/etc/doorbell/
 	${INSTALL_DATA} ${WRKSRC}/src/config.json ${STAGEDIR}/${PREFIX}/etc/doorbell/
+	${INSTALL_PROGRAM} ${WRKSRC}/src/doorbell ${STAGEDIR}/${PREFIX}/bin/doorbell
 
 .include <bsd.port.mk>
