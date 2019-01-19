@@ -2,11 +2,11 @@
 
 SYSCTL_VAR="hw.snd.latency"
 SYSCTL_VAL=2
-SYSCTL_CONF=sysctl.conf
+SYSCTL_CONF="/etc/sysctl.conf"
 
 OVERLAY_VAR="fdt_overlays"
 OVERLAY_VAL="ti_pruss.dtbo"
-OVERLAY_CONF="loader.conf"
+OVERLAY_CONF="/boot/loader.conf"
 
 set_latency()
 {
