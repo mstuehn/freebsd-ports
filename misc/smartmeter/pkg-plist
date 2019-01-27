@@ -1,4 +1,2 @@
-bin/doorbell
-etc/doorbell/config.json
-share/doorbell/DoorBell.wav
-/boot/dtb/overlays/ti_pruss.dtbo
+bin/smartmeter
+etc/smartmeter/config.json
