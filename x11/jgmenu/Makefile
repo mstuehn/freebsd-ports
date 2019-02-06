@@ -23,4 +23,6 @@ USE_XFCE=	libmenu
 
 SHEBANG_GLOB=	*.py
 
+MAKE_ENV=PYTHON3_POLYGLOT=1
+
 .include <bsd.port.mk>
