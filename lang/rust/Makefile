@@ -7,8 +7,10 @@ PORTREVISION?=	0
 CATEGORIES=	lang
 MASTER_SITES=	http://static.rust-lang.org/dist/:src \
 		LOCAL/dumbbell/rust:rust_bootstrap \
+		LOCAL/tobik/rust:rust_bootstrap \
 		https://static.rust-lang.org/dist/:rust_bootstrap \
 		LOCAL/dumbbell/rust:cargo_bootstrap \
+		LOCAL/tobik/rust:cargo_bootstrap \
 		https://static.rust-lang.org/dist/:cargo_bootstrap \
 		https://s3.amazonaws.com/rust-lang-ci/cargo-builds/:cargo_bootstrap \
 		LOCAL/marino:bootstrap
@@ -43,6 +45,10 @@ CONFLICTS_INSTALL?=	rust-nightly
 BOOTSTRAPS_DATE?=		2018-12-20
 
 RUST_BOOTSTRAP_VERSION?=	1.31.1
+<<<<<<< HEAD
+=======
+RUST_BOOTSTRAP_VERSION_aarch64?=	1.32.0
+>>>>>>> master
 RUST_BOOTSTRAP_VERSION_armv6?=	1.32.0
 RUST_BOOTSTRAP_VERSION_armv7?=	1.32.0
 RUST_BOOTSTRAP_VERSION_powerpc64?=	1.32.0
@@ -50,6 +56,10 @@ RUSTC_BOOTSTRAP=		${BOOTSTRAPS_DATE_${ARCH}:U${BOOTSTRAPS_DATE}}/rustc-${RUST_BO
 RUST_STD_BOOTSTRAP=		${BOOTSTRAPS_DATE_${ARCH}:U${BOOTSTRAPS_DATE}}/rust-std-${RUST_BOOTSTRAP_VERSION_${ARCH}:U${RUST_BOOTSTRAP_VERSION}}-${RUST_TARGET}.tar.gz
 
 CARGO_BOOTSTRAP_VERSION?=	0.32.0
+<<<<<<< HEAD
+=======
+CARGO_BOOTSTRAP_VERSION_aarch64?=	0.33.0
+>>>>>>> master
 CARGO_BOOTSTRAP_VERSION_armv6?=	0.33.0
 CARGO_BOOTSTRAP_VERSION_armv7?=	0.33.0
 CARGO_BOOTSTRAP_VERSION_powerpc64?=	0.33.0
@@ -91,12 +101,20 @@ PLIST_FILES=		lib/rustlib/components \
 
 .include <bsd.port.pre.mk>
 
+<<<<<<< HEAD
 # avoid clash with files/*aarch*
 .if ${ARCH} == powerpc64
 EXTRA_PATCHES=	${FILESDIR}/extra-patch-ppc64
 USE_GCC=	8
 .elif ${ARCH} == armv6 || ${ARCH} == armv7
 EXTRA_PATCHES=	${FILESDIR}/extra-patch-arm
+=======
+.if ${ARCH} == powerpc64
+# The bootstrap is hardcoded to use gcc8
+# but we can build with a newer or older compiler as provided by USE_GCC=yes
+BUILD_DEPENDS+=	gcc8:lang/gcc8
+USE_GCC=	yes
+>>>>>>> master
 .endif
 
 X_PY_ENV=	HOME="${WRKDIR}" \
@@ -169,6 +187,15 @@ do-configure:
 		-e 's,%CXX%,${CXX},' \
 		< ${FILESDIR}/config.toml \
 		> ${WRKSRC}/config.toml
+# no need to build a crosscompiler for these targets
+.if ${ARCH} == aarch64 || ${ARCH} == armv6 || ${ARCH} == armv7 || ${ARCH} == powerpc64
+	@${REINPLACE_CMD} -e 's,^#targets =.*,targets = "${LLVM_TARGET}",' \
+		-e 's,^#experimental-targets =.*,experimental-targets = "",' \
+		${WRKSRC}/config.toml
+.endif
+	@${REINPLACE_CMD} -e 's,%CC%,${CC},g' \
+		${WRKSRC}/src/librustc_llvm/build.rs \
+		${WRKSRC}/src/bootstrap/native.rs
 
 # no need to build a crosscompiler for these targets
 .if ${ARCH} == aarch64 || ${ARCH} == armv6 || ${ARCH} == armv7 || ${ARCH} == powerpc64
