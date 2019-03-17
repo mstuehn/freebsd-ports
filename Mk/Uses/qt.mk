@@ -28,8 +28,7 @@
 _QT_MK_INCLUDED=	qt.mk
 
 # Qt versions currently supported by the framework.
-_QT_SUPPORTED?=		4 5
-QT4_VERSION?=		4.8.7
+_QT_SUPPORTED?=		5
 QT5_VERSION?=		5.12.1
 
 # We accept the Qt version to be passed by either or all of the three mk files.
@@ -431,6 +430,9 @@ uitools_PATH=		${LOCALBASE}/${QT_LIBDIR_REL}/libQt${_QT_LIBVER}UiTools.a
 
 virtualkeyboard_PORT=	x11-toolkits/${_QT_RELNAME}-virtualkeyboard
 virtualkeyboard_PATH=	${LOCALBASE}/${QT_PLUGINDIR_REL}/platforminputcontexts/libqtvirtualkeyboardplugin.so
+
+wayland_PORT=		graphics/${_QT_RELNAME}-wayland
+wayland_LIB=		ibQt${_QT_LIBVER}WaylandClient.so
 
 webchannel_PORT=	www/${_QT_RELNAME}-webchannel
 webchannel_LIB=		libQt${_QT_LIBVER}WebChannel.so
