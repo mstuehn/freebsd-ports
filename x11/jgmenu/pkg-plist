@@ -2,6 +2,7 @@ bin/jgmenu
 bin/jgmenu_run
 lib/jgmenu/jgmenu-config.py
 lib/jgmenu/jgmenu-greeneye
+lib/jgmenu/jgmenu-obtheme
 lib/jgmenu/jgmenu-i18n
 lib/jgmenu/jgmenu-init.sh
 lib/jgmenu/jgmenu-lx
