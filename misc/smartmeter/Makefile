@@ -7,7 +7,7 @@ CATEGORIES=		misc
 USE_GITHUB=     yes
 GH_ACCOUNT=     mstuehn
 GH_PROJECT=    	smartmeter
-GH_TAGNAME=	29a8b29	
+GH_TAGNAME=	297cf10
 
 MAINTAINER=	freebsd@justmail.de
 COMMENT=	Collect data from modbus send via mqtt
