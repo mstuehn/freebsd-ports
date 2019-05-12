@@ -5035,6 +5035,7 @@
     SUBDIR += py-wcwidth
     SUBDIR += py-weakrefmethod
     SUBDIR += py-weblib
+    SUBDIR += py-websockets
     SUBDIR += py-websockify
     SUBDIR += py-wheel
     SUBDIR += py-whichcraft
@@ -6197,6 +6198,7 @@
     SUBDIR += z80asm
     SUBDIR += z80ex
     SUBDIR += zanata-cli
+    SUBDIR += zanata-platform
     SUBDIR += zapcc
     SUBDIR += zeal
     SUBDIR += zfp
