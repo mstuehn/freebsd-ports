@@ -5,9 +5,10 @@ PORTNAME=	neovim
 PKGNAMESUFFIX?=	-devel
 
 DISTVERSIONPREFIX=	v
-DISTVERSION=	0.4.0
+PORTVERSION=	0.4.0.${NIGHTLY_DATE:C,-,,g}
 PORTREVISION=	0
 CATEGORIES=	editors
+NIGHTLY_DATE=	2019-06-01
 
 MAINTAINER=	adamw@FreeBSD.org
 COMMENT=	Next-generation Vim
@@ -34,7 +35,7 @@ USES=		cmake iconv lua:build pathfix pkgconfig
 USE_GITHUB=	yes
 GH_TUPLE=	libmpack:libmpack:1.0.5:libmpack \
 		libmpack:libmpack-lua:1.0.7:libmpack_lua
-GH_TAGNAME=	b9ba129
+GH_TAGNAME=	c6cd608
 
 CMAKE_ARGS=	-DLUA_PRG:FILEPATH="${LUA_CMD}" \
 		-DCMAKE_INSTALL_MANDIR:PATH="${MANPREFIX}/man" \

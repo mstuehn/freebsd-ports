@@ -715,6 +715,7 @@ share/nvim/runtime/keymap/vietnamese-vni_utf-8.vim
 share/nvim/runtime/lua/man.lua
 share/nvim/runtime/lua/vim/compat.lua
 share/nvim/runtime/lua/vim/inspect.lua
+share/nvim/runtime/lua/vim/shared.lua
 share/nvim/runtime/macmap.vim
 share/nvim/runtime/macros/editexisting.vim
 share/nvim/runtime/macros/justify.vim
