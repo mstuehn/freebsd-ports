@@ -558,10 +558,10 @@
     SUBDIR += pecl-cassandra
     SUBDIR += pecl-couchbase
     SUBDIR += pecl-leveldb
+    SUBDIR += pecl-memcache
     SUBDIR += pecl-memcached
     SUBDIR += pecl-mongodb
     SUBDIR += pecl-redis
-    SUBDIR += pecl-redis3
     SUBDIR += pecl-rrd
     SUBDIR += percona-pam-for-mysql
     SUBDIR += percona-toolkit

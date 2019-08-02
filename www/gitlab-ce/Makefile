@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	gitlab-ce
-PORTVERSION=	12.0.3
+PORTVERSION=	12.0.4
 PORTREVISION=	0
 CATEGORIES=	www devel
 
@@ -120,7 +120,7 @@ MY_DEPENDS=	git>=2.21.0:devel/git \
 	rubygem-sidekiq-cron>=1.0.0:devel/rubygem-sidekiq-cron \
 	rubygem-redis-namespace>=1.6.0:databases/rubygem-redis-namespace \
 	rubygem-gitlab-sidekiq-fetcher>=0.4.0:devel/rubygem-gitlab-sidekiq-fetcher \
-	rubygem-fugit>=1.2.1:devel/rubygem-fugit \
+	rubygem-fugit12>=1.2.1:devel/rubygem-fugit12 \
 	rubygem-httparty>=0.16.4:www/rubygem-httparty \
 	rubygem-rainbow>=3.0:devel/rubygem-rainbow \
 	rubygem-ruby-progressbar>=0:devel/rubygem-ruby-progressbar \
@@ -156,7 +156,7 @@ MY_DEPENDS=	git>=2.21.0:devel/git \
 	rubygem-rack-proxy>=0.6.0:www/rubygem-rack-proxy \
 	rubygem-sassc-rails>=2.1.0:textproc/rubygem-sassc-rails \
 	rubygem-uglifier27>=2.7.2:www/rubygem-uglifier27 \
-	rubygem-addressable>=2.5.2:www/rubygem-addressable \
+	rubygem-addressable25>=2.5.2:www/rubygem-addressable25 \
 	rubygem-font-awesome-rails-rails5>=4.7:devel/rubygem-font-awesome-rails-rails5 \
 	rubygem-gemojione>=3.3:graphics/rubygem-gemojione \
 	rubygem-gon-rails5>=6.2.0:www/rubygem-gon-rails5 \
@@ -235,7 +235,7 @@ USE_RC_SUBR=	gitlab
 USE_GITLAB=	yes
 GL_ACCOUNT=	gitlab-org
 # Find the here: https://gitlab.com/gitlab-org/gitlab-ce/tags
-GL_COMMIT=	08a51a9db938bb05f9a4c999075d010079e16bad
+GL_COMMIT=	a5ac84a1d05212de6d1831e2d4e8f552139f2a3c
 
 USERS=	git
 GROUPS=	git
