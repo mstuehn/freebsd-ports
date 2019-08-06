@@ -1,6 +1,7 @@
 bin/jgmenu
 bin/jgmenu_run
 lib/jgmenu/jgmenu-apps
+lib/jgmenu/jgmenu-hide-app.sh
 lib/jgmenu/jgmenu-config
 lib/jgmenu/jgmenu-greeneye
 lib/jgmenu/jgmenu-i18n
