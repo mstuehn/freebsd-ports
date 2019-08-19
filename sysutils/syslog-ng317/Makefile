@@ -184,10 +184,6 @@ CURL_CONFIGURE_OFF=		--with-libcurl=off
 CURL_LIB_DEPENDS=		libcurl.so:ftp/curl
 CURL_PLIST_FILES=		lib/syslog-ng/libhttp.so
 
-# Move Gradle's home below ${WRKDIR} instead of using ${HOME}/.gradle
-_GRADLE_ENV=	GRADLE_USER_HOME=${WRKDIR}/gradle-home
-_GRADLE_RUN=	${SETENV} ${_GRADLE_ENV} gradle4 --no-daemon
-
 .include <bsd.port.pre.mk>
 
 .if !${PORT_OPTIONS:MJSON}
@@ -197,6 +193,9 @@ BROKEN=           Default configuration does not currently support non-JSON buil
 post-patch:
 	@${CP} ${WRKSRC}/scl/syslog-ng.conf ${WRKSRC}/scl/syslog-ng.conf.dist
 	@${CP} ${WRKSRC}/scl/scl.conf ${WRKSRC}/scl/scl.conf.sample
+
+post-patch-JAVA_MOD-on:
+	@${REINPLACE_CMD} 's,$$(GRADLE),& --no-daemon,g' ${WRKSRC}/Makefile.in
 
 post-install:
 .if ${PORT_OPTIONS:MDOCS}
