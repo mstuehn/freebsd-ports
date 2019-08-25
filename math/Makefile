@@ -159,6 +159,7 @@
     SUBDIR += calcoo
     SUBDIR += calctool
     SUBDIR += cantor
+    SUBDIR += casadi
     SUBDIR += cbc
     SUBDIR += cblas
     SUBDIR += ccmath
@@ -189,6 +190,7 @@
     SUBDIR += convertall
     SUBDIR += coq
     SUBDIR += couenne
+    SUBDIR += cppad
     SUBDIR += crlibm
     SUBDIR += cryptominisat
     SUBDIR += curv
