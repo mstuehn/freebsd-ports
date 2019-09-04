@@ -610,8 +610,8 @@ FreeBSD_MAINTAINER=	portmgr@FreeBSD.org
 #				  scripts or nothing, depending on what's available.
 # build			- Actually compile the sources.
 # install		- Install the results of a build.
-# reinstall		- Install the results of a build, ignoring "already installed"
-#				  flag.
+# reinstall		- Install the results of a build, deinstalling any previous
+#				  installation if needed.
 # deinstall		- Remove the installation.
 # deinstall-all	- Remove all installations with the same PKGORIGIN.
 # test			- Run tests for the port.
@@ -3670,7 +3670,7 @@ checkpatch:
 .if !target(reinstall)
 reinstall:
 	@${RM} ${INSTALL_COOKIE} ${PACKAGE_COOKIE}
-	@cd ${.CURDIR} && DEPENDS_TARGET="${DEPENDS_TARGET}" ${MAKE} -DFORCE_PKG_REGISTER install
+	@cd ${.CURDIR} && DEPENDS_TARGET="${DEPENDS_TARGET}" ${MAKE} deinstall install
 .endif
 
 .if !target(restage)
