@@ -1283,6 +1283,7 @@
     SUBDIR += py-hypua2jamo
     SUBDIR += py-jaxml
     SUBDIR += py-jsonslicer
+    SUBDIR += py-jsx-lexer
     SUBDIR += py-jtextfsm
     SUBDIR += py-junit-xml
     SUBDIR += py-langdetect
@@ -1298,6 +1299,7 @@
     SUBDIR += py-markdown-math
     SUBDIR += py-markdown2
     SUBDIR += py-markups
+    SUBDIR += py-misaka
     SUBDIR += py-mistune
     SUBDIR += py-mkdocs
     SUBDIR += py-mkdocs-nature
