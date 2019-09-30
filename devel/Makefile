@@ -4396,6 +4396,7 @@
     SUBDIR += py-dis3
     SUBDIR += py-distlib
     SUBDIR += py-distorm
+    SUBDIR += py-dj22-django-rq
     SUBDIR += py-django-rq
     SUBDIR += py-django-rq-dashboard
     SUBDIR += py-django-tastypie-mongoengine
@@ -6226,7 +6227,7 @@
     SUBDIR += rubygem-sprockets
     SUBDIR += rubygem-sprockets-es6
     SUBDIR += rubygem-sprockets-helpers
-    SUBDIR += rubygem-sprockets-rails
+    SUBDIR += rubygem-sprockets-rails-rails4
     SUBDIR += rubygem-sprockets-rails-rails5
     SUBDIR += rubygem-sprockets-rails-rails50
     SUBDIR += rubygem-sprockets-rails-rails52
