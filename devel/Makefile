@@ -4799,6 +4799,7 @@
     SUBDIR += py-pip-tools
     SUBDIR += py-pipdeptree
     SUBDIR += py-pipenv
+    SUBDIR += py-pipreqs
     SUBDIR += py-pkgconfig
     SUBDIR += py-plac
     SUBDIR += py-plan
@@ -5214,6 +5215,7 @@
     SUBDIR += py-yandex-money-sdk
     SUBDIR += py-yappi
     SUBDIR += py-yapps2
+    SUBDIR += py-yarg
     SUBDIR += py-yattag
     SUBDIR += py-ydbf
     SUBDIR += py-yg.lockfile
