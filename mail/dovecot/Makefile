@@ -2,13 +2,16 @@
 # $FreeBSD$
 
 ######################################################################
-# Anytime PORTVERSION changes please bump PORTREVISION of            #
-# mail/dovecot-pigeonhole. See ports/146029 for an explanation.      #
+# Anytime PORTVERSION changes please bump PORTREVISION of:           #
+# - mail/dovecot-pigeonhole. See ports/146029 for an explanation.    #
+# - mail/dovecot-fts-xapian.                                         #
+# Same for mail/dovecot-fts-xapian (see pr 241147)                   #
 ######################################################################
 
 PORTNAME=	dovecot
 PORTVERSION=	2.3.8
-CATEGORIES=	mail ipv6
+PORTREVISION=	1
+CATEGORIES=	mail
 MASTER_SITES=	https://dovecot.org/releases/2.3/
 
 MAINTAINER=	ler@FreeBSD.org
@@ -83,7 +86,7 @@ VPOPMAIL_CONFIGURE_WITH=vpopmail
 CDB_CONFIGURE_WITH=	cdb
 CDB_LIB_DEPENDS=	libcdb.so:databases/tinycdb
 
-LDAP_USE=		OPENLDAP=yes
+LDAP_LIB_DEPENDS=	libldap.so:net/openldap24-client
 LDAP_CONFIGURE_WITH=	ldap
 
 MYSQL_USES=		mysql
