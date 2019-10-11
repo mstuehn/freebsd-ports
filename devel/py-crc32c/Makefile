@@ -1,16 +1,13 @@
 # $FreeBSD$
 
-PORTNAME=	identify
-PORTVERSION=	1.4.7
-CATEGORIES=	devel
+PORTNAME=	crc32c
+PORTVERSION=	1.7
+CATEGORIES=	devel python
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
 MAINTAINER=	swills@FreeBSD.org
-COMMENT=	File identification library for Python
-
-LICENSE=	MIT
-LICENSE_FILE=	${WRKSRC}/LICENSE
+COMMENT=	Python package exposing the intel sse4.2 crc32c instruction
 
 USES=		python
 USE_PYTHON=	autoplist distutils
