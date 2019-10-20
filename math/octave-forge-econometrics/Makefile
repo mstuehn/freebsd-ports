@@ -1,9 +1,8 @@
-# Created by: Stephen Montgomery-Smith <stephen@FreeBSD.org>
+# Created by: Stephen Montgomery-Smith <stephen@math.missouri.edu>
 # $FreeBSD$
 
-PORTNAME=	octave-forge-dicom
-PORTVERSION=	0.2.2
-PORTREVISION=	5
+PORTNAME=	octave-forge-econometrics
+PORTVERSION=	1.1.2
 CATEGORIES=	math
 
 MAINTAINER=	stephen@FreeBSD.org
@@ -12,16 +11,13 @@ COMMENT=	Octave-forge package ${OCTAVE_PKGNAME}
 LICENSE=	GPLv3
 LICENSE_FILE=	${WRKDIR}/${OCTSRC}/COPYING
 
-BUILD_DEPENDS+=	cmake:devel/cmake
-
-LIB_DEPENDS+=	libgdcmCommon.so:devel/gdcm
-
 # OCTSRC is the name of the directory of the package.
 # It is usually ${OCTAVE_PKGNAME} or ${DISTNAME}.
 OCTSRC=		${DISTNAME}
 
 WRKSRC=		${WRKDIR}/${OCTSRC}/src
-GNU_CONFIGURE=	yes
+
+RUN_DEPENDS+=	${TARBALLS_DIR}/optim.tar.gz:math/octave-forge-optim
 
 .include "${.CURDIR}/../../Mk/bsd.octave.mk"
 
