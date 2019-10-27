@@ -4856,6 +4856,7 @@
     SUBDIR += py-pygithub
     SUBDIR += py-pygpx
     SUBDIR += py-pyhashxx
+    SUBDIR += py-pyhcl
     SUBDIR += py-pyicu
     SUBDIR += py-pyinotify
     SUBDIR += py-pyinstaller
@@ -5357,6 +5358,7 @@
     SUBDIR += raknet
     SUBDIR += rang
     SUBDIR += range-v3
+    SUBDIR += rapidcheck
     SUBDIR += rapidjson
     SUBDIR += raylib
     SUBDIR += rbenv
