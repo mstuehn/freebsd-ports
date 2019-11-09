@@ -1,9 +1,9 @@
 bin/jgmenu
 bin/jgmenu_run
 lib/jgmenu/jgmenu-apps
-lib/jgmenu/jgmenu-hide-app.sh
 lib/jgmenu/jgmenu-config
 lib/jgmenu/jgmenu-greeneye
+lib/jgmenu/jgmenu-hide-app.sh
 lib/jgmenu/jgmenu-i18n
 lib/jgmenu/jgmenu-init.sh
 lib/jgmenu/jgmenu-lx
@@ -15,9 +15,11 @@ lib/jgmenu/jgmenu-themes.sh
 lib/jgmenu/jgmenu-unity-hack.py
 share/applications/jgmenu.desktop
 share/icons/hicolor/scalable/apps/jgmenu.svg
+share/man/man1/jgmenu-apps.1
 share/man/man1/jgmenu-lx.1
 share/man/man1/jgmenu-ob.1
 share/man/man1/jgmenu-pmenu.1
 share/man/man1/jgmenu.1
 share/man/man1/jgmenu_run.1
 share/man/man7/jgmenututorial.7
+share/man/man7/jgmenuunicode.7
