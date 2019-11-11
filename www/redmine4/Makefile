@@ -2,41 +2,39 @@
 # $FreeBSD$
 
 PORTNAME=	redmine
-PORTVERSION=	3.4.11
+PORTVERSION=	4.0.5
 CATEGORIES=	www
 MASTER_SITES=	https://www.redmine.org/releases/
+PKGNAMESUFFIX=	4
 
-MAINTAINER=	ruby@FreeBSD.org
+MAINTAINER=	mikael.urankar@gmail.com
 COMMENT=	Flexible project management web application
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/doc/COPYING
 
 RUN_DEPENDS=	rubygem-bundler>=1.5.0:sysutils/rubygem-bundler \
-		rubygem-rails4>=4.2.11.1:www/rubygem-rails4 \
-		rubygem-jquery-rails>=3.1.4:www/rubygem-jquery-rails \
-		rubygem-coderay>=1.1.1:textproc/rubygem-coderay \
+		rubygem-rails52>=5.2.3:www/rubygem-rails52 \
+		rubygem-rouge>=3.12.0:textproc/rubygem-rouge \
 		rubygem-request_store>=1.0.5:devel/rubygem-request_store \
-		rubygem-mime-types>=3.0:misc/rubygem-mime-types \
-		rubygem-protected_attributes>=0:devel/rubygem-protected_attributes \
-		rubygem-actionpack-xml_parser1>=0:textproc/rubygem-actionpack-xml_parser1 \
-		rubygem-roadie-rails>=1.1.1:mail/rubygem-roadie-rails \
-		rubygem-roadie>=3.2.1:mail/rubygem-roadie \
+		rubygem-mini_mime>=1.0.1:mail/rubygem-mini_mime \
+		rubygem-actionpack-xml_parser52>=0:textproc/rubygem-actionpack-xml_parser52 \
+		rubygem-roadie-rails52>=1.3.0:mail/rubygem-roadie-rails52 \
 		rubygem-mimemagic>=0:misc/rubygem-mimemagic \
-		rubygem-mail>=2.6.4:mail/rubygem-mail \
-		rubygem-nokogiri18>=1.8.1:textproc/rubygem-nokogiri18 \
+		rubygem-mail>=2.7.1:mail/rubygem-mail \
+		rubygem-nokogiri>=1.10.0:textproc/rubygem-nokogiri \
 		rubygem-i18n>=0.7:devel/rubygem-i18n \
-		rubygem-rails-html-sanitizer>=1.0.3:textproc/rubygem-rails-html-sanitizer \
+		rubygem-sprockets3>=3.7.2:devel/rubygem-sprockets3 \
 		rubygem-rbpdf>=1.19.6:print/rubygem-rbpdf \
-		rubygem-net-ldap>=0.12:net/rubygem-net-ldap \
-		rubygem-ruby-openid>=2.3:net/rubygem-ruby-openid \
+		rubygem-net-ldap>=0.16:net/rubygem-net-ldap \
+		rubygem-ruby-openid>=2.9.2:net/rubygem-ruby-openid \
 		rubygem-rack-openid>=0:www/rubygem-rack-openid \
 		rubygem-rake>=0:devel/rubygem-rake
 
 USES=		cpe
 USE_RUBY=	yes
 
-CONFLICTS_INSTALL=	redmine4
+CONFLICTS_INSTALL=	redmine
 
 NO_ARCH=	yes
 NO_BUILD=	yes
@@ -56,8 +54,8 @@ THIN_DESC=	Use Thin WEB server
 MYSQL_DESC=	MySQL database support (via mysql2 rubygem)
 NO_OPTIONS_SORT=	yes
 
-MYSQL_RUN_DEPENDS=	rubygem-mysql2>=0.4.6:databases/rubygem-mysql2
-POSTGRESQL_RUN_DEPENDS=	rubygem-pg018>=0.18.1:databases/rubygem-pg018
+MYSQL_RUN_DEPENDS=	rubygem-mysql2>=0.5.0:databases/rubygem-mysql2
+POSTGRESQL_RUN_DEPENDS=	rubygem-pg>=1.1.4:databases/rubygem-pg
 MARKDOWN_RUN_DEPENDS=	rubygem-redcarpet>=3.4.0:textproc/rubygem-redcarpet
 RMAGIC_RUN_DEPENDS=	rubygem-rmagick>=2.16.0:graphics/rubygem-rmagick
 THIN_RUN_DEPENDS=	rubygem-thin>=1.6.2:www/rubygem-thin
@@ -65,29 +63,20 @@ THIN_SUB_LIST=		WWWOWN=${WWWOWN} WWWGRP=${WWWGRP}
 THIN_VARS=		USE_RC_SUBR=redmine
 
 post-extract:
-	@${RM} ${WRKSRC}/.hgignore ${WRKSRC}/.travis.yml
+	@${RM} -r ${WRKSRC}/.hgignore ${WRKSRC}/.gitignore ${WRKSRC}/.github \
+		${WRKSRC}/files/delete.me ${WRKSRC}/log/delete.me
 	@${MV} ${WRKSRC}/config/settings.yml ${WRKSRC}/config/settings.yml.sample
 	@${MV} ${WRKSRC}/config/database.yml.example ${WRKSRC}/config/database.yml.sample
-	@${TOUCH} ${WRKSRC}/log/development.log
 
 post-patch:
-	@${FIND} ${WRKSRC} -name '*.bak' -delete
-
-pre-install:
-	${MKDIR} ${WRKSRC}/public/plugin_assets
+	@${RM} ${WRKSRC}/Gemfile.orig
 
 do-install:
 	${MKDIR} ${STAGEDIR}${WWWDIR}
-	${MKDIR} ${STAGEDIR}${WWWDIR}/tmp/pids
 	${MKDIR} ${STAGEDIR}${WWWDIR}/bundler.d
-	${MKDIR} ${STAGEDIR}${WWWDIR}/tmp/pdf
-	${TOUCH} ${STAGEDIR}${WWWDIR}/tmp/pdf/empty
-	${MKDIR} ${STAGEDIR}${WWWDIR}/tmp/test
-	${TOUCH} ${STAGEDIR}${WWWDIR}/tmp/test/empty
-	${MKDIR} ${STAGEDIR}${WWWDIR}/tmp/thumbnails
-	${TOUCH} ${STAGEDIR}${WWWDIR}/tmp/thumbnails/empty
 	${MKDIR} ${STAGEDIR}${WWWDIR}/log
-	${TOUCH} ${STAGEDIR}${WWWDIR}/log/development.log
+	${MKDIR} ${STAGEDIR}${WWWDIR}/public/plugin_assets
+	${MKDIR} ${STAGEDIR}${WWWDIR}/tmp
 	cd ${WRKSRC} && ${COPYTREE_SHARE} . ${STAGEDIR}${WWWDIR}
 	${TOUCH} ${STAGEDIR}${WWWDIR}/Gemfile.lock
 
