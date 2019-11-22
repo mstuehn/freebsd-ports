@@ -809,7 +809,6 @@
     SUBDIR += git-remote-hg
     SUBDIR += git-review
     SUBDIR += git-subrepo
-    SUBDIR += git-subversion
     SUBDIR += git-town
     SUBDIR += gitaly
     SUBDIR += gitblit
@@ -1373,7 +1372,6 @@
     SUBDIR += libtifiles2
     SUBDIR += libtool
     SUBDIR += libtpl
-    SUBDIR += libtrue
     SUBDIR += libtsm
     SUBDIR += libtuntap
     SUBDIR += libublio
