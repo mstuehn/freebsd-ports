@@ -1,13 +1,13 @@
 # Created by: Po-Chuan Hsieh <sunpoet@FreeBSD.org>
 # $FreeBSD$
 
-PORTNAME=	aws-sdk-ec2
-PORTVERSION=	1.125.0
+PORTNAME=	aws-sdk-kinesisvideosignalingchannels
+PORTVERSION=	1.0.0
 CATEGORIES=	devel rubygems
 MASTER_SITES=	RG
 
 MAINTAINER=	sunpoet@FreeBSD.org
-COMMENT=	Official AWS Ruby gem for Amazon Elastic Compute Cloud (Amazon EC2)
+COMMENT=	Official AWS Ruby gem for Amazon Kinesis Video Signaling Channels
 
 LICENSE=	APACHE20
 
