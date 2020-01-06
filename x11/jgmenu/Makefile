@@ -26,6 +26,6 @@ SHEBANG_GLOB=	*.py
 MAKE_ENV=PYTHON3_POLYGLOT=1
 
 do-configure:
-	@(cd ${WRKSRC} && ./configure --prefix=${PREFIX})
+	@(cd ${WRKSRC} && ./configure --prefix=${PREFIX} --with-pmenu)
 
 .include <bsd.port.mk>
