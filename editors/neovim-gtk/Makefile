@@ -154,6 +154,7 @@ CARGO_CRATES=	aho-corasick-0.7.6 \
 		winres-0.1.11
 
 PLIST_FILES=    bin/nvim-gtk \
+				share/nvim-gtk/runtime/plugin/nvim_gui_shim.vim \
 				share/applications/org.daa.NeovimGtk.desktop \
 				share/icons/hicolor/128x128/apps/org.daa.NeovimGtk_128.png \
 				share/icons/hicolor/48x48/apps/org.daa.NeovimGtk.png \
@@ -162,6 +163,9 @@ PLIST_FILES=    bin/nvim-gtk \
 
 post-install:
 	${STRIP_CMD} ${STAGEDIR}${PREFIX}/bin/nvim-gtk
+
+	@${MKDIR} ${STAGEDIR}${PREFIX}/share/nvim-gtk
+	(cd ${WRKSRC} && ${COPYTREE_SHARE} runtime ${STAGEDIR}${PREFIX}/share/nvim-gtk/)
 
 	@${MKDIR} ${STAGEDIR}${PREFIX}/share/icons/hicolor/symbolic/apps/
 	${INSTALL_DATA} ${WRKSRC}/desktop/org.daa.NeovimGtk-symbolic.svg \
