@@ -107,6 +107,7 @@
     SUBDIR += csb-aspell
     SUBDIR += csv2latex
     SUBDIR += csvdiff
+    SUBDIR += csvq
     SUBDIR += ctpl
     SUBDIR += ctpp2
     SUBDIR += cwtext
@@ -1745,6 +1746,7 @@
     SUBDIR += texi2html
     SUBDIR += texi2mdoc
     SUBDIR += textogif
+    SUBDIR += textql
     SUBDIR += the_silver_searcher
     SUBDIR += ti-hunspell
     SUBDIR += tidyp
