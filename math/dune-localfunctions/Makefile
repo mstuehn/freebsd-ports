@@ -1,32 +1,34 @@
 # $FreeBSD$
 
-PORTNAME=	dune-common
+PORTNAME=	dune-localfunctions
 DISTVERSIONPREFIX=	v
-DISTVERSION=	2.7.0
+DISTVERSION=	2.7.0rc2
+PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org
-COMMENT=	DUNE framework: Build system, infrastructure and foundation classes
+COMMENT=	DUNE framework: Local finite elements
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
-BUILD_DEPENDS=	openmpi>0:net/openmpi \
+DUNE_DEPENDS=	dune-common>0:math/dune-common \
+		dune-geometry>0:math/dune-geometry
+BUILD_DEPENDS=	${DUNE_DEPENDS} \
 		vc>0:devel/vc
-LIB_DEPENDS=	libopenblas.so:math/openblas \
-		libtbb.so:devel/tbb
+RUN_DEPENDS=	${DUNE_DEPENDS}
 
-USES=		cmake compiler:c++17-lang fortran pkgconfig python shebangfix
-SHEBANG_FILES=	bin/dune-ctest
+USES=		cmake compiler:c++17-lang fortran pkgconfig
 USE_GITLAB=	yes
-USE_LDCONFIG=	yes
 
 GL_ACCOUNT=	core
 GL_SITE=	https://gitlab.dune-project.org
 GL_ACCOUNT=	core
-GL_COMMIT=	c5321673af09725a411bdd81aa2be5cfaf8bf9a6
+GL_COMMIT=	4def7a7c627172d660854411d322818115a20765
 
 CMAKE_ON=	BUILD_SHARED_LIBS
+
+NO_ARCH=	yes
 
 OPTIONS_DEFINE=	DOCS
 OPTIONS_SUB=	yes

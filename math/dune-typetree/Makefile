@@ -1,28 +1,31 @@
 # $FreeBSD$
 
-PORTNAME=	dune-istl
+PORTNAME=	dune-typetree
 DISTVERSIONPREFIX=	v
 DISTVERSION=	2.7.0rc2
 PORTREVISION=	1
 CATEGORIES=	math
 
 MAINTAINER=	yuri@FreeBSD.org
-COMMENT=	DUNE framework: Iterative Solver Template Library
+COMMENT=	DUNE framework: The TypeTree library
 
 LICENSE=	GPLv2
 LICENSE_FILE=	${WRKSRC}/LICENSE.md
 
 BUILD_DEPENDS=	dune-common>0:math/dune-common \
+		openmpi>0:net/openmpi \
 		vc>0:devel/vc
-RUN_DEPENDS=	dune-common>0:math/dune-common
+RUN_DEPENDS=	dune-common>0:math/dune-common \
+		openmpi>0:net/openmpi \
+		vc>0:devel/vc
 
 USES=		cmake compiler:c++17-lang fortran pkgconfig
 USE_GITLAB=	yes
 
 GL_ACCOUNT=	core
 GL_SITE=	https://gitlab.dune-project.org
-GL_ACCOUNT=	core
-GL_COMMIT=	37d19468f560f49b0ec6aff167075a52fc9eade3
+GL_ACCOUNT=	staging
+GL_COMMIT=	b6427163a5ef45996471edad672ecab584aa490c
 
 NO_ARCH=	yes
 
