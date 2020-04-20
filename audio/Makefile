@@ -458,6 +458,7 @@
     SUBDIR += linux-c7-sdl_mixer
     SUBDIR += linux-laudio
     SUBDIR += linuxsampler
+    SUBDIR += liquidsfz
     SUBDIR += listener
     SUBDIR += lmms
     SUBDIR += logitechmediaserver
@@ -752,6 +753,7 @@
     SUBDIR += soundtouch
     SUBDIR += sox
     SUBDIR += spc2it
+    SUBDIR += spectacle-lv2
     SUBDIR += spectrogram
     SUBDIR += speech-denoiser-lv2
     SUBDIR += speex
