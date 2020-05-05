@@ -299,6 +299,7 @@
     SUBDIR += dwatch-json
     SUBDIR += dwatch-pwsnoop
     SUBDIR += e2fsprogs
+    SUBDIR += ebsnvme-id
     SUBDIR += ec2-scripts
     SUBDIR += eclat
     SUBDIR += edid-decode
@@ -1525,6 +1526,7 @@
     SUBDIR += zisofs-tools
     SUBDIR += znapzend
     SUBDIR += zogftw
+    SUBDIR += zoxide
     SUBDIR += zrep
     SUBDIR += zrepl
     SUBDIR += zsd
