@@ -2,7 +2,7 @@
 PORTNAME=	jgmenu
 DISTVERSIONPREFIX=	v
 PORTVERSION=	4.2.1
-PORTREVISION=	1
+PORTREVISION=	2
 CATEGORIES=	x11
 
 USE_GITHUB=	yes
@@ -17,7 +17,7 @@ LIB_DEPENDS=	libXrandr.so:x11/libXrandr \
 		libmenu-cache.so:x11/menu-cache \
 		libpng16.so:graphics/png
 
-USES=		gnome gmake pkgconfig python:3.6 shebangfix xorg
+USES=		gnome gmake pkgconfig python shebangfix xorg
 USE_XORG=	x11 xrandr
 USE_GNOME=	cairo pango librsvg2
 USE_XFCE=	libmenu
