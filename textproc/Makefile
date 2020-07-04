@@ -397,6 +397,7 @@
     SUBDIR += linux-c7-aspell
     SUBDIR += linux-c7-expat
     SUBDIR += linux-c7-libxml2
+    SUBDIR += linux-c7-libxslt
     SUBDIR += linuxdoc
     SUBDIR += linuxdoc-tools
     SUBDIR += localize
@@ -536,6 +537,7 @@
     SUBDIR += p5-Hash-Merge
     SUBDIR += p5-Hatena-Keyword
     SUBDIR += p5-IO-CSVHeaderFile
+    SUBDIR += p5-JSON-Validator
     SUBDIR += p5-JavaScript-Minifier
     SUBDIR += p5-JavaScript-Minifier-XS
     SUBDIR += p5-JavaScript-Packer
@@ -1420,6 +1422,7 @@
     SUBDIR += py-zope.tal
     SUBDIR += py-zpt
     SUBDIR += qprint
+    SUBDIR += qr
     SUBDIR += qrcodegen
     SUBDIR += qstardict
     SUBDIR += qt5-xml
@@ -1496,6 +1499,8 @@
     SUBDIR += rubygem-creole
     SUBDIR += rubygem-css_parser
     SUBDIR += rubygem-cssmin
+    SUBDIR += rubygem-cucumber-gherkin
+    SUBDIR += rubygem-cucumber-html-formatter
     SUBDIR += rubygem-diff-lcs
     SUBDIR += rubygem-diff_match_patch
     SUBDIR += rubygem-diffy
@@ -1522,7 +1527,6 @@
     SUBDIR += rubygem-ferret
     SUBDIR += rubygem-fog-xml
     SUBDIR += rubygem-gemoji
-    SUBDIR += rubygem-gherkin
     SUBDIR += rubygem-github-linguist
     SUBDIR += rubygem-github-markup
     SUBDIR += rubygem-github-markup17
@@ -1606,6 +1610,7 @@
     SUBDIR += rubygem-rouge312
     SUBDIR += rubygem-rouge317
     SUBDIR += rubygem-rouge318
+    SUBDIR += rubygem-rouge319
     SUBDIR += rubygem-rttool
     SUBDIR += rubygem-ruby-augeas
     SUBDIR += rubygem-ruby-xslt

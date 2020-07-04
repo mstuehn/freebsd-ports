@@ -133,6 +133,7 @@
     SUBDIR += catesc
     SUBDIR += cave9
     SUBDIR += cavezofphear
+    SUBDIR += cdogs-sdl
     SUBDIR += cgoban
     SUBDIR += chapping
     SUBDIR += chessx
@@ -872,6 +873,7 @@
     SUBDIR += sex
     SUBDIR += sgt-puzzles
     SUBDIR += shaaft
+    SUBDIR += shockolate
     SUBDIR += shootingstar
     SUBDIR += simplevaders
     SUBDIR += simsu

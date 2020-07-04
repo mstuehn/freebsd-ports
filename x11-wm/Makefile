@@ -13,6 +13,7 @@
     SUBDIR += awesome-vicious
     SUBDIR += bbkeys
     SUBDIR += bbpager
+    SUBDIR += berry
     SUBDIR += blackbox
     SUBDIR += bspwm
     SUBDIR += cage
@@ -20,6 +21,7 @@
     SUBDIR += compiz
     SUBDIR += compiz-plugins-extra
     SUBDIR += compiz-plugins-main
+    SUBDIR += compiz-plugins-unsupported
     SUBDIR += compizconfig-backend-gconf
     SUBDIR += compizconfig-python
     SUBDIR += compton

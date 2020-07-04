@@ -109,6 +109,7 @@
     SUBDIR += agar
     SUBDIR += ahven
     SUBDIR += aifad
+    SUBDIR += aixlog
     SUBDIR += ald
     SUBDIR += allegro
     SUBDIR += allegro-devel
@@ -993,6 +994,7 @@
     SUBDIR += jetbrains-goland
     SUBDIR += jetbrains-phpstorm
     SUBDIR += jetbrains-webstorm
+    SUBDIR += jgoodies-looks
     SUBDIR += jiic
     SUBDIR += jiri
     SUBDIR += jline
@@ -1421,7 +1423,6 @@
     SUBDIR += log4shib
     SUBDIR += lokalize
     SUBDIR += loki
-    SUBDIR += looks
     SUBDIR += love
     SUBDIR += love07
     SUBDIR += love08
@@ -1432,6 +1433,7 @@
     SUBDIR += lua-bitlib
     SUBDIR += lua-bitop
     SUBDIR += lua-cjson
+    SUBDIR += lua-cqueues
     SUBDIR += lua-gettext
     SUBDIR += lua-lgi
     SUBDIR += lua-libevent
@@ -1543,6 +1545,7 @@
     SUBDIR += nlohmann-json
     SUBDIR += node-thrift
     SUBDIR += notcurses
+    SUBDIR += notify-sharp
     SUBDIR += npth
     SUBDIR += nsgenbind
     SUBDIR += nspr
@@ -2506,6 +2509,7 @@
     SUBDIR += p5-IO-Pty-Easy
     SUBDIR += p5-IO-SessionData
     SUBDIR += p5-IO-String
+    SUBDIR += p5-IO-Stringy
     SUBDIR += p5-IO-Stty
     SUBDIR += p5-IO-Tee
     SUBDIR += p5-IO-TieCombine
@@ -2513,7 +2517,6 @@
     SUBDIR += p5-IO-Tty
     SUBDIR += p5-IO-Util
     SUBDIR += p5-IO-YAML
-    SUBDIR += p5-IO-stringy
     SUBDIR += p5-IOC
     SUBDIR += p5-IPC-Cache
     SUBDIR += p5-IPC-Cmd
@@ -3245,6 +3248,9 @@
     SUBDIR += p5-Term-ANSIScreen
     SUBDIR += p5-Term-Animation
     SUBDIR += p5-Term-App-Roles
+    SUBDIR += p5-Term-App-Util-Color
+    SUBDIR += p5-Term-App-Util-Interactive
+    SUBDIR += p5-Term-App-Util-Size
     SUBDIR += p5-Term-CallEditor
     SUBDIR += p5-Term-Choose
     SUBDIR += p5-Term-Choose-Util
@@ -4323,7 +4329,6 @@
     SUBDIR += py-distlib
     SUBDIR += py-distorm
     SUBDIR += py-distributed
-    SUBDIR += py-dj22-django-rq
     SUBDIR += py-django-rq
     SUBDIR += py-docker-py
     SUBDIR += py-dockerpty
@@ -4676,6 +4681,7 @@
     SUBDIR += py-opendht
     SUBDIR += py-opengrok-tools
     SUBDIR += py-openstacksdk
+    SUBDIR += py-openstacksdk043
     SUBDIR += py-opentracing
     SUBDIR += py-opster
     SUBDIR += py-optik
@@ -4955,6 +4961,7 @@
     SUBDIR += py-pytz
     SUBDIR += py-pyudev
     SUBDIR += py-pyupgrade
+    SUBDIR += py-pyusb
     SUBDIR += py-pyutil
     SUBDIR += py-pyvalid
     SUBDIR += py-pyvisa
@@ -5021,6 +5028,7 @@
     SUBDIR += py-ruamel.yaml
     SUBDIR += py-ruamel.yaml.clib
     SUBDIR += py-rubymarshal
+    SUBDIR += py-rush
     SUBDIR += py-rx
     SUBDIR += py-rx1
     SUBDIR += py-sanetime
@@ -5069,6 +5077,7 @@
     SUBDIR += py-speaklater
     SUBDIR += py-spyder
     SUBDIR += py-sqlcc
+    SUBDIR += py-srsly
     SUBDIR += py-stackexchange
     SUBDIR += py-statgrab
     SUBDIR += py-statsd
@@ -5137,6 +5146,7 @@
     SUBDIR += py-tree-format
     SUBDIR += py-trimesh
     SUBDIR += py-trollius
+    SUBDIR += py-ttictoc
     SUBDIR += py-ttystatus
     SUBDIR += py-tvrage
     SUBDIR += py-tw.forms
@@ -5167,7 +5177,6 @@
     SUBDIR += py-urlimport
     SUBDIR += py-urwid
     SUBDIR += py-urwidtrees
-    SUBDIR += py-usb
     SUBDIR += py-user_agents
     SUBDIR += py-userpath
     SUBDIR += py-utils
@@ -5483,6 +5492,7 @@
     SUBDIR += rubygem-aws-sdk-cloudwatch
     SUBDIR += rubygem-aws-sdk-cloudwatchevents
     SUBDIR += rubygem-aws-sdk-cloudwatchlogs
+    SUBDIR += rubygem-aws-sdk-codeartifact
     SUBDIR += rubygem-aws-sdk-codebuild
     SUBDIR += rubygem-aws-sdk-codecommit
     SUBDIR += rubygem-aws-sdk-codedeploy
@@ -5548,6 +5558,7 @@
     SUBDIR += rubygem-aws-sdk-groundstation
     SUBDIR += rubygem-aws-sdk-guardduty
     SUBDIR += rubygem-aws-sdk-health
+    SUBDIR += rubygem-aws-sdk-honeycode
     SUBDIR += rubygem-aws-sdk-iam
     SUBDIR += rubygem-aws-sdk-imagebuilder
     SUBDIR += rubygem-aws-sdk-importexport
@@ -5860,6 +5871,7 @@
     SUBDIR += rubygem-chef-provisioning
     SUBDIR += rubygem-cheffish
     SUBDIR += rubygem-childprocess
+    SUBDIR += rubygem-childprocess3
     SUBDIR += rubygem-chronic
     SUBDIR += rubygem-chronic_duration
     SUBDIR += rubygem-clamp
@@ -5900,13 +5912,12 @@
     SUBDIR += rubygem-csv
     SUBDIR += rubygem-cucumber
     SUBDIR += rubygem-cucumber-core
-    SUBDIR += rubygem-cucumber-expressions
-    SUBDIR += rubygem-cucumber-expressions6
+    SUBDIR += rubygem-cucumber-cucumber-expressions
     SUBDIR += rubygem-cucumber-formatter-dots
     SUBDIR += rubygem-cucumber-messages
+    SUBDIR += rubygem-cucumber-messages4
     SUBDIR += rubygem-cucumber-rails
     SUBDIR += rubygem-cucumber-tag-expressions
-    SUBDIR += rubygem-cucumber-tag_expressions1
     SUBDIR += rubygem-cucumber-wire
     SUBDIR += rubygem-curses
     SUBDIR += rubygem-cyoi
@@ -5988,7 +5999,10 @@
     SUBDIR += rubygem-flexmock
     SUBDIR += rubygem-flipper
     SUBDIR += rubygem-flipper-active_support_cache_store
+    SUBDIR += rubygem-flipper-active_support_cache_store017
     SUBDIR += rubygem-flipper-ui
+    SUBDIR += rubygem-flipper-ui017
+    SUBDIR += rubygem-flipper017
     SUBDIR += rubygem-fluent-logger
     SUBDIR += rubygem-fog
     SUBDIR += rubygem-fog-core
@@ -6264,6 +6278,7 @@
     SUBDIR += rubygem-progressbar
     SUBDIR += rubygem-prometheus-client-mmap
     SUBDIR += rubygem-protected_attributes
+    SUBDIR += rubygem-protobuf-cucumber
     SUBDIR += rubygem-protocol
     SUBDIR += rubygem-pry
     SUBDIR += rubygem-pry-byebug
@@ -6335,6 +6350,7 @@
     SUBDIR += rubygem-rr
     SUBDIR += rubygem-rrd-ffi
     SUBDIR += rubygem-rscm
+    SUBDIR += rubygem-rsec
     SUBDIR += rubygem-rspec
     SUBDIR += rubygem-rspec-core
     SUBDIR += rubygem-rspec-expectations
@@ -6382,6 +6398,7 @@
     SUBDIR += rubygem-semver2
     SUBDIR += rubygem-semverse
     SUBDIR += rubygem-sentry-raven
+    SUBDIR += rubygem-sentry-raven2
     SUBDIR += rubygem-sentry-raven25
     SUBDIR += rubygem-sentry-raven29
     SUBDIR += rubygem-sequel
@@ -6653,7 +6670,7 @@
     SUBDIR += svn_load_dirs
     SUBDIR += svntrac
     SUBDIR += swank-clojure
-    SUBDIR += swig30
+    SUBDIR += swig
     SUBDIR += synfig
     SUBDIR += sysconftool
     SUBDIR += sysfsutils

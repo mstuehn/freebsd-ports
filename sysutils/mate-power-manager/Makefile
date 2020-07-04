@@ -2,7 +2,7 @@
 # $FreeBSD$
 
 PORTNAME=	mate-power-manager
-PORTVERSION=	1.24.0
+PORTVERSION=	1.24.1
 CATEGORIES=	sysutils mate
 MASTER_SITES=	MATE
 DIST_SUBDIR=	mate
@@ -11,7 +11,7 @@ MAINTAINER=	gnome@FreeBSD.org
 COMMENT=	Power management system for the MATE Desktop
 
 LICENSE=	GPLv2
-LICENSE_FILES=	${WRKSRC}/COPYING
+LICENSE_FILE=	${WRKSRC}/COPYING
 
 BUILD_DEPENDS=	itstool:textproc/itstool \
 		gnome-keyring>=3.0.0:security/gnome-keyring

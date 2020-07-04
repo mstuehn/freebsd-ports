@@ -60,7 +60,6 @@
     SUBDIR += bird2
     SUBDIR += bittwist
     SUBDIR += bmon
-    SUBDIR += bnxt-kmod
     SUBDIR += boinc-client
     SUBDIR += boinc_curses
     SUBDIR += bosh-bootloader
@@ -395,6 +394,8 @@
     SUBDIR += libproxy-python
     SUBDIR += libproxy-webkit3
     SUBDIR += librdkafka
+    SUBDIR += librespeed-cli
+    SUBDIR += librespeed-go
     SUBDIR += librsync
     SUBDIR += libsignal
     SUBDIR += libsrtp2
@@ -474,6 +475,7 @@
     SUBDIR += nats-streaming-server
     SUBDIR += nats-top
     SUBDIR += nbd-server
+    SUBDIR += nbdkit
     SUBDIR += nc
     SUBDIR += ncp
     SUBDIR += ndisc6
@@ -529,6 +531,8 @@
     SUBDIR += onedrive
     SUBDIR += onenetd
     SUBDIR += onioncat
+    SUBDIR += ooni-mini
+    SUBDIR += ooni-probe-cli
     SUBDIR += opal
     SUBDIR += open-isns
     SUBDIR += openbgpd
@@ -1178,6 +1182,7 @@
     SUBDIR += ripe-whois
     SUBDIR += routinator
     SUBDIR += rp-pppoe
+    SUBDIR += rpki-client
     SUBDIR += rsocket-cpp
     SUBDIR += rsplib
     SUBDIR += rsync
@@ -1338,6 +1343,7 @@
     SUBDIR += rubygem-xmlrpc
     SUBDIR += rude
     SUBDIR += ryu
+    SUBDIR += sacc
     SUBDIR += samba410
     SUBDIR += samba411
     SUBDIR += samplicator
