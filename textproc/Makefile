@@ -1260,6 +1260,7 @@
     SUBDIR += py-genshi
     SUBDIR += py-gensim
     SUBDIR += py-gfm
+    SUBDIR += py-googletrans
     SUBDIR += py-grako
     SUBDIR += py-guess-language
     SUBDIR += py-hexdump
@@ -1561,9 +1562,9 @@
     SUBDIR += rubygem-js_regex
     SUBDIR += rubygem-jsmin
     SUBDIR += rubygem-kramdown
-    SUBDIR += rubygem-kramdown22
     SUBDIR += rubygem-kramdown-parser-gfm
     SUBDIR += rubygem-kramdown1
+    SUBDIR += rubygem-kramdown22
     SUBDIR += rubygem-kwalify
     SUBDIR += rubygem-libxml-ruby
     SUBDIR += rubygem-linguistics

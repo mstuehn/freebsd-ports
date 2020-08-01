@@ -131,7 +131,6 @@
     SUBDIR += drive
     SUBDIR += dropbox-api-command
     SUBDIR += dropbox-uploader
-    SUBDIR += dshell
     SUBDIR += dtcp
     SUBDIR += dtcpclient
     SUBDIR += dual-dhclient
@@ -235,6 +234,7 @@
     SUBDIR += haproxy17
     SUBDIR += haproxy18
     SUBDIR += haproxy19
+    SUBDIR += haproxy20
     SUBDIR += haproxy21
     SUBDIR += hblock
     SUBDIR += hexinject
@@ -1335,6 +1335,9 @@
     SUBDIR += rubygem-stackdriver-core
     SUBDIR += rubygem-stompserver
     SUBDIR += rubygem-t
+    SUBDIR += rubygem-train
+    SUBDIR += rubygem-train-core
+    SUBDIR += rubygem-train-winrm
     SUBDIR += rubygem-tweetstream
     SUBDIR += rubygem-twitter
     SUBDIR += rubygem-twitter-stream

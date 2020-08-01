@@ -758,7 +758,9 @@
     SUBDIR += openipmi
     SUBDIR += opensbi
     SUBDIR += openseachest
-    SUBDIR += openshift-install
+    SUBDIR += openshift-install-devel
+    SUBDIR += openshift-install45
+    SUBDIR += openshift-install46
     SUBDIR += openupsd
     SUBDIR += openzfs
     SUBDIR += openzfs-kmod
@@ -1035,6 +1037,7 @@
     SUBDIR += qt5-qtpaths
     SUBDIR += qt5-qtplugininfo
     SUBDIR += qtpass
+    SUBDIR += quickjail
     SUBDIR += quicksynergy
     SUBDIR += racktables
     SUBDIR += radeontool
@@ -1091,6 +1094,8 @@
     SUBDIR += rubygem-chef-config
     SUBDIR += rubygem-chef-config12
     SUBDIR += rubygem-chef-dk
+    SUBDIR += rubygem-chef-utils
+    SUBDIR += rubygem-chef-vault
     SUBDIR += rubygem-chef-zero
     SUBDIR += rubygem-chef-zero5
     SUBDIR += rubygem-chef12
@@ -1359,6 +1364,7 @@
     SUBDIR += u-boot-pinebookpro
     SUBDIR += u-boot-qemu-arm
     SUBDIR += u-boot-qemu-arm64
+    SUBDIR += u-boot-qemu-riscv64
     SUBDIR += u-boot-riotboard
     SUBDIR += u-boot-rock64
     SUBDIR += u-boot-rockpro64
