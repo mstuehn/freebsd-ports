@@ -18,6 +18,8 @@ LICENSE_FILE=	${WRKSRC}/README
 BROKEN_aarch64=		./ratfor -o test.f test.r keeps creating huge output file
 BROKEN_powerpc=		./ratfor -o test.f test.r keeps creating huge output file
 BROKEN_powerpc64=	./ratfor -o test.f test.r keeps creating huge output file
+BROKEN_powerpc64le=	./ratfor -o test.f test.r keeps creating huge output file
+BROKEN_powerpcspe=	./ratfor -o test.f test.r keeps creating huge output file
 
 NO_WRKSUBDIR=	yes
 EXTRACT_CMD=	${CAT}
@@ -33,7 +35,7 @@ post-patch:
 
 do-install:
 	${INSTALL_PROGRAM} ${WRKSRC}/ratfor77 ${STAGEDIR}${PREFIX}/bin
-	${INSTALL} -lr ${STAGEDIR}${PREFIX}/bin/ratfor77 ${STAGEDIR}${PREFIX}/bin/ratfor
+	${RLN} ${STAGEDIR}${PREFIX}/bin/ratfor77 ${STAGEDIR}${PREFIX}/bin/ratfor
 	${INSTALL_MAN} ${WRKSRC}/ratfor.1 ${STAGEDIR}${PREFIX}/man/man1
 
 .include <bsd.port.mk>
