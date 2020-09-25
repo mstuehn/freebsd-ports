@@ -4416,6 +4416,7 @@
     SUBDIR += py-game_sdl2
     SUBDIR += py-gast
     SUBDIR += py-gdata
+    SUBDIR += py-genson
     SUBDIR += py-genty
     SUBDIR += py-geojson
     SUBDIR += py-gevent
@@ -4855,7 +4856,6 @@
     SUBDIR += py-pyperf
     SUBDIR += py-pyplusplus
     SUBDIR += py-pypugjs
-    SUBDIR += py-pyqi
     SUBDIR += py-pyqtree
     SUBDIR += py-pyral
     SUBDIR += py-pyrepl
