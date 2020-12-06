@@ -2,14 +2,9 @@
 
 PORTNAME=	rlvm
 DISTVERSIONPREFIX=	release-
-DISTVERSION=	0.14-67
-DISTVERSIONSUFFIX=	-g9350209
-PORTREVISION=	22
+DISTVERSION=	0.14-75
+DISTVERSIONSUFFIX=	-g975e740c
 CATEGORIES=	games
-
-PATCH_SITES=	https://github.com/${GH_ACCOUNT}/${GH_PROJECT}/commit/
-PATCHFILES=	fb627bad9129.patch:-p1
-PATCHFILES+=	97c808194c56.patch:-p1 # https://github.com/eglaysher/rlvm/pull/89
 
 MAINTAINER=	jbeich@FreeBSD.org
 COMMENT=	RealLive virtual machine clone
@@ -21,7 +16,8 @@ BROKEN_FreeBSD_11_powerpc64=	fails to link on powerpc64 elfv1: gcn_platform.cc: 
 BROKEN_FreeBSD_12_powerpc64=	fails to link on powerpc64 elfv1: gcn_platform.cc: undefined reference to gcn::Exception::Exception
 
 BUILD_DEPENDS=	${LOCALBASE}/include/utf8.h:devel/utf8cpp
-LIB_DEPENDS=	libvorbisfile.so:audio/libvorbis \
+LIB_DEPENDS=	libsndfile.so:audio/libsndfile \
+		libvorbisfile.so:audio/libvorbis \
 		libboost_serialization.so:devel/boost-libs \
 		libguichan.so:devel/guichan
 RUN_DEPENDS=	${LOCALBASE}/share/fonts/dejavu/DejaVuSans.ttf:x11-fonts/dejavu
@@ -70,7 +66,8 @@ post-patch:
 		${WRKSRC}/src/platforms/gtk/gtk_rlvm_instance.cc
 	@${REINPLACE_CMD} -e 's,/usr/share,${LOCALBASE}/share,' \
 		-e 's,truetype/ttf-dejavu,dejavu,' \
-		-e 's,truetype/[^/"]*/,TTF/,' \
+		-e 's,truetype/mona,mona-ttf,' \
+		-e 's,truetype/,,' \
 		${WRKSRC}/src/utilities/find_font_file.cc
 
 do-test-TEST-on:
