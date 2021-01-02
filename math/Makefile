@@ -697,9 +697,8 @@
     SUBDIR += pear-Math_Combinatorics
     SUBDIR += pecl-bitset
     SUBDIR += pecl-stats2
+    SUBDIR += permlib
     SUBDIR += petiga
-    SUBDIR += php72-bcmath
-    SUBDIR += php72-gmp
     SUBDIR += php73-bcmath
     SUBDIR += php73-gmp
     SUBDIR += php74-bcmath
@@ -748,6 +747,7 @@
     SUBDIR += py-chaospy
     SUBDIR += py-claripy
     SUBDIR += py-cma
+    SUBDIR += py-cmaes
     SUBDIR += py-colormath
     SUBDIR += py-cryptominisat
     SUBDIR += py-cvxopt
@@ -796,6 +796,7 @@
     SUBDIR += py-numpy
     SUBDIR += py-numpy-stl
     SUBDIR += py-opt-einsum
+    SUBDIR += py-optuna
     SUBDIR += py-or-tools
     SUBDIR += py-osqp
     SUBDIR += py-pandas
@@ -926,6 +927,7 @@
     SUBDIR += symengine
     SUBDIR += symmetrica
     SUBDIR += symphony
+    SUBDIR += sympol
     SUBDIR += sympow
     SUBDIR += tablix
     SUBDIR += taucs

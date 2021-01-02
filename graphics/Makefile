@@ -141,7 +141,6 @@
     SUBDIR += drm-fbsd11.2-kmod
     SUBDIR += drm-fbsd12.0-kmod
     SUBDIR += drm-kmod
-    SUBDIR += drm-legacy-kmod
     SUBDIR += drm_info
     SUBDIR += dspdfviewer
     SUBDIR += dssim
@@ -751,8 +750,6 @@
     SUBDIR += phototonic
     SUBDIR += php-facedetect
     SUBDIR += php-geos
-    SUBDIR += php72-exif
-    SUBDIR += php72-gd
     SUBDIR += php73-exif
     SUBDIR += php73-gd
     SUBDIR += php74-exif
@@ -812,6 +809,7 @@
     SUBDIR += py-beziers
     SUBDIR += py-blockdiag
     SUBDIR += py-blockdiagcontrib-cisco
+    SUBDIR += py-box2d-py
     SUBDIR += py-cairo
     SUBDIR += py-cairocffi
     SUBDIR += py-cairosvg
@@ -841,7 +839,6 @@
     SUBDIR += py-hiplot
     SUBDIR += py-imageio
     SUBDIR += py-imageio-ffmpeg
-    SUBDIR += py-imageio24
     SUBDIR += py-imagesize
     SUBDIR += py-img2pdf
     SUBDIR += py-leather

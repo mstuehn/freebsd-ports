@@ -275,6 +275,7 @@
     SUBDIR += py-caffeine-ng
     SUBDIR += py-i3ipc
     SUBDIR += py-pyscreenshot
+    SUBDIR += py-python-xapp
     SUBDIR += py-pyvirtualdisplay
     SUBDIR += py-qt5-opengl
     SUBDIR += py-xcffib
@@ -377,7 +378,7 @@
     SUBDIR += x11perf
     SUBDIR += x3270
     SUBDIR += xantfarm
-    SUBDIR += xapps
+    SUBDIR += xapp
     SUBDIR += xascii
     SUBDIR += xauth
     SUBDIR += xautolock
@@ -417,6 +418,7 @@
     SUBDIR += xcursorgen
     SUBDIR += xcut
     SUBDIR += xdg-desktop-portal-wlr
+    SUBDIR += xdialog
     SUBDIR += xditview
     SUBDIR += xdm
     SUBDIR += xdo
