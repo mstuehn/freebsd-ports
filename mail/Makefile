@@ -134,7 +134,6 @@
     SUBDIR += findmaildirs
     SUBDIR += geary
     SUBDIR += gensig
-    SUBDIR += getmail
     SUBDIR += getmail6
     SUBDIR += gmime2
     SUBDIR += gmime2-sharp
@@ -506,6 +505,7 @@
     SUBDIR += py-postfix-mta-sts-resolver
     SUBDIR += py-premailer
     SUBDIR += py-pymailq
+    SUBDIR += py-pysasl
     SUBDIR += py-pyspf
     SUBDIR += py-pyzmail
     SUBDIR += py-spf-engine
@@ -579,6 +579,9 @@
     SUBDIR += rubygem-mailboxer
     SUBDIR += rubygem-mailfactory
     SUBDIR += rubygem-mini_mime
+    SUBDIR += rubygem-net-imap
+    SUBDIR += rubygem-net-pop
+    SUBDIR += rubygem-net-smtp
     SUBDIR += rubygem-pony
     SUBDIR += rubygem-premailer
     SUBDIR += rubygem-premailer-rails

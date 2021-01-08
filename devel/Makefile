@@ -25,6 +25,7 @@
     SUBDIR += R-cran-brio
     SUBDIR += R-cran-broom
     SUBDIR += R-cran-caTools
+    SUBDIR += R-cran-callr
     SUBDIR += R-cran-caret
     SUBDIR += R-cran-chron
     SUBDIR += R-cran-classInt
@@ -61,13 +62,16 @@
     SUBDIR += R-cran-magrittr
     SUBDIR += R-cran-memoise
     SUBDIR += R-cran-microbenchmark
+    SUBDIR += R-cran-mockery
     SUBDIR += R-cran-optparse
     SUBDIR += R-cran-pillar
+    SUBDIR += R-cran-pkgbuild
     SUBDIR += R-cran-pkgconfig
     SUBDIR += R-cran-pkgmaker
     SUBDIR += R-cran-plogr
     SUBDIR += R-cran-plyr
     SUBDIR += R-cran-praise
+    SUBDIR += R-cran-prettycode
     SUBDIR += R-cran-prettyunits
     SUBDIR += R-cran-progress
     SUBDIR += R-cran-promises
@@ -85,6 +89,8 @@
     SUBDIR += R-cran-rngtools
     SUBDIR += R-cran-rprojroot
     SUBDIR += R-cran-rstudioapi
+    SUBDIR += R-cran-rversions
+    SUBDIR += R-cran-sessioninfo
     SUBDIR += R-cran-sfsmisc
     SUBDIR += R-cran-sourcetools
     SUBDIR += R-cran-sys
@@ -105,6 +111,7 @@
     SUBDIR += aarch64-xtoolchain-gcc
     SUBDIR += abi-compliance-checker
     SUBDIR += abseil
+    SUBDIR += acme
     SUBDIR += acsccid
     SUBDIR += activitymail
     SUBDIR += ada-util
@@ -209,6 +216,7 @@
     SUBDIR += awless
     SUBDIR += aws-c-common
     SUBDIR += aws-c-event-stream
+    SUBDIR += aws-c-io
     SUBDIR += aws-checksums
     SUBDIR += aws-sdk-cpp
     SUBDIR += aws-sdk-php
@@ -269,7 +277,6 @@
     SUBDIR += busybee
     SUBDIR += byacc
     SUBDIR += byaccj
-    SUBDIR += bzr
     SUBDIR += c2mdoc
     SUBDIR += caf
     SUBDIR += calibrator
@@ -309,7 +316,6 @@
     SUBDIR += checkbashisms
     SUBDIR += checkheaders
     SUBDIR += chroma
-    SUBDIR += chromium-gn
     SUBDIR += chrpath
     SUBDIR += chruby
     SUBDIR += cil
@@ -402,6 +408,7 @@
     SUBDIR += csoap
     SUBDIR += cssc
     SUBDIR += ctags
+    SUBDIR += ctre
     SUBDIR += ctypes.sh
     SUBDIR += cunit
     SUBDIR += cut
@@ -522,9 +529,6 @@
     SUBDIR += efl
     SUBDIR += egypt
     SUBDIR += eiffelstudio
-    SUBDIR += electron4
-    SUBDIR += electron5
-    SUBDIR += electron6
     SUBDIR += electron7
     SUBDIR += elf
     SUBDIR += elfio
@@ -704,6 +708,7 @@
     SUBDIR += ftjam
     SUBDIR += ftnchek
     SUBDIR += fuel
+    SUBDIR += functionalplus
     SUBDIR += fuzzylite
     SUBDIR += fxdiv
     SUBDIR += g-wrap
@@ -941,6 +946,7 @@
     SUBDIR += htable
     SUBDIR += hub
     SUBDIR += hwloc
+    SUBDIR += hwloc2
     SUBDIR += hyperscan
     SUBDIR += i386-gcc
     SUBDIR += i386-xtoolchain-gcc
@@ -962,6 +968,7 @@
     SUBDIR += imake
     SUBDIR += inastemp
     SUBDIR += include-what-you-use
+    SUBDIR += indicators
     SUBDIR += inifiled
     SUBDIR += inilib
     SUBDIR += inilike
@@ -1511,7 +1518,6 @@
     SUBDIR += mm-common
     SUBDIR += modd
     SUBDIR += mongo-c-driver
-    SUBDIR += mongo-cxx-driver
     SUBDIR += mono-addins
     SUBDIR += monodevelop
     SUBDIR += monotone
@@ -2108,6 +2114,7 @@
     SUBDIR += p5-Data-Validator
     SUBDIR += p5-Data-Visitor
     SUBDIR += p5-Data-Visitor-Encode
+    SUBDIR += p5-Data-Visitor-Tiny
     SUBDIR += p5-Data-Walk
     SUBDIR += p5-Date-Business
     SUBDIR += p5-Date-Calc
@@ -3342,6 +3349,7 @@
     SUBDIR += p5-Test-Deep-UnorderedPairs
     SUBDIR += p5-Test-Dependencies
     SUBDIR += p5-Test-DependentModules
+    SUBDIR += p5-Test-DiagINC
     SUBDIR += p5-Test-Differences
     SUBDIR += p5-Test-Distribution
     SUBDIR += p5-Test-EOL
@@ -4032,6 +4040,7 @@
     SUBDIR += py-ansi
     SUBDIR += py-antlr4-python3-runtime
     SUBDIR += py-anyconfig
+    SUBDIR += py-anyio
     SUBDIR += py-anyjson
     SUBDIR += py-apache_conf_parser
     SUBDIR += py-apipkg
@@ -4100,6 +4109,7 @@
     SUBDIR += py-azure-mgmt-containerservice
     SUBDIR += py-azure-mgmt-core
     SUBDIR += py-azure-mgmt-cosmosdb
+    SUBDIR += py-azure-mgmt-databoxedge
     SUBDIR += py-azure-mgmt-datalake-analytics
     SUBDIR += py-azure-mgmt-datalake-store
     SUBDIR += py-azure-mgmt-datamigration
@@ -4159,8 +4169,6 @@
     SUBDIR += py-backcall
     SUBDIR += py-backports
     SUBDIR += py-backports.csv
-    SUBDIR += py-backports.functools_lru_cache
-    SUBDIR += py-backports_abc
     SUBDIR += py-banal
     SUBDIR += py-bandit
     SUBDIR += py-bcdoc
@@ -4406,7 +4414,6 @@
     SUBDIR += py-furl
     SUBDIR += py-fusepy
     SUBDIR += py-future
-    SUBDIR += py-futures
     SUBDIR += py-futurist
     SUBDIR += py-futurist1
     SUBDIR += py-fuzzywuzzy
@@ -5045,7 +5052,6 @@
     SUBDIR += py-simpleparse
     SUBDIR += py-simpletal
     SUBDIR += py-simpy
-    SUBDIR += py-singledispatch
     SUBDIR += py-sip
     SUBDIR += py-six
     SUBDIR += py-smmap
@@ -5176,6 +5182,7 @@
     SUBDIR += py-warlock
     SUBDIR += py-watchdog
     SUBDIR += py-watchgod
+    SUBDIR += py-watermark
     SUBDIR += py-wcwidth
     SUBDIR += py-weblib
     SUBDIR += py-websockets
@@ -6048,9 +6055,11 @@
     SUBDIR += rubygem-ffi-yajl
     SUBDIR += rubygem-ffi110
     SUBDIR += rubygem-fiber-local
+    SUBDIR += rubygem-fiddle
     SUBDIR += rubygem-file-tail
     SUBDIR += rubygem-filesize
     SUBDIR += rubygem-fileutils
+    SUBDIR += rubygem-find
     SUBDIR += rubygem-flexmock
     SUBDIR += rubygem-flipper
     SUBDIR += rubygem-flipper-active_support_cache_store
@@ -6172,6 +6181,8 @@
     SUBDIR += rubygem-interact
     SUBDIR += rubygem-io-console
     SUBDIR += rubygem-io-like
+    SUBDIR += rubygem-io-nonblock
+    SUBDIR += rubygem-io-wait
     SUBDIR += rubygem-iobuffer
     SUBDIR += rubygem-irb
     SUBDIR += rubygem-iso8601
@@ -6298,12 +6309,14 @@
     SUBDIR += rubygem-octopress-hooks
     SUBDIR += rubygem-oj
     SUBDIR += rubygem-omniauth_crowd
+    SUBDIR += rubygem-open3
     SUBDIR += rubygem-open3_backport
     SUBDIR += rubygem-open4
     SUBDIR += rubygem-opentracing
     SUBDIR += rubygem-opentracing04
     SUBDIR += rubygem-opt_parse_validator
     SUBDIR += rubygem-optimist
+    SUBDIR += rubygem-optparse
     SUBDIR += rubygem-orm_adapter
     SUBDIR += rubygem-os
     SUBDIR += rubygem-p4ruby
@@ -6315,6 +6328,7 @@
     SUBDIR += rubygem-parser
     SUBDIR += rubygem-pastel
     SUBDIR += rubygem-patch_finder
+    SUBDIR += rubygem-pathname
     SUBDIR += rubygem-pathspec
     SUBDIR += rubygem-pathutil
     SUBDIR += rubygem-pdk
@@ -6340,6 +6354,7 @@
     SUBDIR += rubygem-powerbar
     SUBDIR += rubygem-powerpack
     SUBDIR += rubygem-pqueue
+    SUBDIR += rubygem-prettyprint
     SUBDIR += rubygem-progressbar
     SUBDIR += rubygem-prometheus-client-mmap
     SUBDIR += rubygem-protected_attributes
@@ -6471,8 +6486,10 @@
     SUBDIR += rubygem-sentry-raven25
     SUBDIR += rubygem-sentry-raven29
     SUBDIR += rubygem-sequel
+    SUBDIR += rubygem-set
     SUBDIR += rubygem-settingslogic
     SUBDIR += rubygem-sexp_processor
+    SUBDIR += rubygem-shell
     SUBDIR += rubygem-shoulda
     SUBDIR += rubygem-shoulda-context
     SUBDIR += rubygem-shoulda-matchers
@@ -6544,9 +6561,11 @@
     SUBDIR += rubygem-svn2git
     SUBDIR += rubygem-sync
     SUBDIR += rubygem-sysinfo
+    SUBDIR += rubygem-syslog
     SUBDIR += rubygem-systemu
     SUBDIR += rubygem-table_print
     SUBDIR += rubygem-tdiff
+    SUBDIR += rubygem-tempfile
     SUBDIR += rubygem-templater
     SUBDIR += rubygem-temple
     SUBDIR += rubygem-term-ansicolor
@@ -6560,18 +6579,22 @@
     SUBDIR += rubygem-thwait
     SUBDIR += rubygem-tilt
     SUBDIR += rubygem-tilt1
+    SUBDIR += rubygem-time
     SUBDIR += rubygem-timeliness
     SUBDIR += rubygem-timeout
     SUBDIR += rubygem-timers
     SUBDIR += rubygem-tins
     SUBDIR += rubygem-titlecase
+    SUBDIR += rubygem-tmpdir
     SUBDIR += rubygem-to_regexp
     SUBDIR += rubygem-tool
+    SUBDIR += rubygem-tracer
     SUBDIR += rubygem-transaction-simple
     SUBDIR += rubygem-travis
     SUBDIR += rubygem-treetop
     SUBDIR += rubygem-trollop
     SUBDIR += rubygem-trollop1
+    SUBDIR += rubygem-tsort
     SUBDIR += rubygem-tty
     SUBDIR += rubygem-tty-box
     SUBDIR += rubygem-tty-color
@@ -6601,6 +6624,7 @@
     SUBDIR += rubygem-tzinfo-data
     SUBDIR += rubygem-tzinfo1
     SUBDIR += rubygem-uber
+    SUBDIR += rubygem-un
     SUBDIR += rubygem-unicode
     SUBDIR += rubygem-unicode-display_width
     SUBDIR += rubygem-unicode_utils
@@ -6635,6 +6659,7 @@
     SUBDIR += rubygem-xdg
     SUBDIR += rubygem-xdg2
     SUBDIR += rubygem-xdg3
+    SUBDIR += rubygem-xdg4
     SUBDIR += rubygem-xpath
     SUBDIR += rubygem-yajl-ruby
     SUBDIR += rubygem-yui-compressor
@@ -6811,6 +6836,7 @@
     SUBDIR += tnt
     SUBDIR += tokamak
     SUBDIR += tokei
+    SUBDIR += toml11
     SUBDIR += tortoisehg
     SUBDIR += tpasm
     SUBDIR += tradcpp

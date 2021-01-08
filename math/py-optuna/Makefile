@@ -6,7 +6,7 @@ CATEGORIES=	math # machine-learning
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	neel@neelc.org
+MAINTAINER=	nc@FreeBSD.org
 COMMENT=	Hyperparameter optimization framework
 
 LICENSE=	MIT
@@ -27,6 +27,5 @@ USES=		python:3.6+
 USE_PYTHON=	autoplist distutils
 
 NO_ARCH=	yes
-SUB_FILES=	pkg-message
 
 .include <bsd.port.mk>

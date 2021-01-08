@@ -81,7 +81,6 @@
     SUBDIR += cl-lml
     SUBDIR += cl-lml-sbcl
     SUBDIR += clearsilver
-    SUBDIR += cliqz
     SUBDIR += closure-compiler
     SUBDIR += cntlm
     SUBDIR += codeigniter
@@ -265,7 +264,6 @@
     SUBDIR += ilias
     SUBDIR += ilias6
     SUBDIR += interchange
-    SUBDIR += iridium
     SUBDIR += itop
     SUBDIR += jericho-html
     SUBDIR += jesred
@@ -1862,6 +1860,7 @@
     SUBDIR += rubygem-ethon
     SUBDIR += rubygem-eventmachine_httpserver
     SUBDIR += rubygem-faraday
+    SUBDIR += rubygem-faraday-net_http
     SUBDIR += rubygem-faraday0
     SUBDIR += rubygem-faraday_middleware
     SUBDIR += rubygem-faraday_middleware0
@@ -1970,6 +1969,7 @@
     SUBDIR += rubygem-multipart-post
     SUBDIR += rubygem-nanoc
     SUBDIR += rubygem-nested_form
+    SUBDIR += rubygem-net-http
     SUBDIR += rubygem-net-http-digest_auth
     SUBDIR += rubygem-net-http-persistent
     SUBDIR += rubygem-net-http-persistent2
@@ -2184,8 +2184,7 @@
     SUBDIR += tomcat85
     SUBDIR += tomcat9
     SUBDIR += tomee
-    SUBDIR += trac
-    SUBDIR += trac-accountmanager
+    SUBDIR += trac-devel
     SUBDIR += trafficserver
     SUBDIR += transmission-web
     SUBDIR += transproxy
@@ -2285,7 +2284,6 @@
     SUBDIR += wsdlpull
     SUBDIR += wsmake
     SUBDIR += wt
-    SUBDIR += wt3
     SUBDIR += wuzz
     SUBDIR += wwwoffle
     SUBDIR += xapian-omega

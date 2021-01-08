@@ -6,7 +6,7 @@ CATEGORIES=	graphics
 MASTER_SITES=	CHEESESHOP
 PKGNAMEPREFIX=	${PYTHON_PKGNAMEPREFIX}
 
-MAINTAINER=	neel@neelc.org
+MAINTAINER=	nc@FreeBSD.org
 COMMENT=	2D physics library Box2D 2.3 for usage in Python
 
 LICENSE=	ZLIB
@@ -17,7 +17,5 @@ LIB_DEPENDS=	libBox2D.so:misc/box2d
 
 USES=		compiler:c11 python:3.6+
 USE_PYTHON=	autoplist distutils
-
-SUB_FILES=	pkg-message
 
 .include <bsd.port.mk>

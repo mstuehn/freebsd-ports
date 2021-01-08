@@ -21,8 +21,6 @@
     SUBDIR += apq-mysql
     SUBDIR += apq-odbc
     SUBDIR += apq-pgsql
-    SUBDIR += arangodb32
-    SUBDIR += arangodb33
     SUBDIR += arrow
     SUBDIR += ateam_mysql57_ldap_auth
     SUBDIR += ateam_mysql_ldap_auth
@@ -802,6 +800,7 @@
     SUBDIR += py-rb
     SUBDIR += py-redis
     SUBDIR += py-redis2
+    SUBDIR += py-rrdtool
     SUBDIR += py-sispy
     SUBDIR += py-south
     SUBDIR += py-sqlalchemy-json
@@ -959,6 +958,7 @@
     SUBDIR += rubygem-redis-namespace
     SUBDIR += rubygem-redis-namespace16
     SUBDIR += rubygem-redis-namespace17
+    SUBDIR += rubygem-sdbm
     SUBDIR += rubygem-seed-fu
     SUBDIR += rubygem-sqlite3
     SUBDIR += rubygem-sqlite3-ruby
