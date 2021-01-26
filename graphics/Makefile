@@ -141,6 +141,7 @@
     SUBDIR += drm-devel-kmod
     SUBDIR += drm-fbsd11.2-kmod
     SUBDIR += drm-fbsd12.0-kmod
+    SUBDIR += drm-fbsd13-kmod
     SUBDIR += drm-kmod
     SUBDIR += drm_info
     SUBDIR += dspdfviewer
@@ -235,7 +236,6 @@
     SUBDIR += geoserver
     SUBDIR += gexiv2
     SUBDIR += giblib
-    SUBDIR += gif2png
     SUBDIR += giflib
     SUBDIR += gifmerge
     SUBDIR += gifsicle
@@ -562,6 +562,7 @@
     SUBDIR += mypaint
     SUBDIR += mypaint-brushes
     SUBDIR += mypaint-brushes2
+    SUBDIR += nanort
     SUBDIR += nanosvg
     SUBDIR += netpbm
     SUBDIR += nip2
@@ -845,6 +846,7 @@
     SUBDIR += py-img2pdf
     SUBDIR += py-leather
     SUBDIR += py-mapclassify
+    SUBDIR += py-mayavi
     SUBDIR += py-mcomix
     SUBDIR += py-mgwr
     SUBDIR += py-ming
@@ -917,7 +919,6 @@
     SUBDIR += qgis-ltr
     SUBDIR += qiv
     SUBDIR += qr-code-generator
-    SUBDIR += qt-avif-image-plugin
     SUBDIR += qt5-3d
     SUBDIR += qt5-graphicaleffects
     SUBDIR += qt5-imageformats

@@ -93,9 +93,6 @@
     SUBDIR += bareos-client
     SUBDIR += bareos-server
     SUBDIR += bareos-traymonitor
-    SUBDIR += bareos16-client
-    SUBDIR += bareos16-client-static
-    SUBDIR += bareos16-server
     SUBDIR += bareos17-client
     SUBDIR += bareos17-client-static
     SUBDIR += bareos17-server
@@ -457,6 +454,7 @@
     SUBDIR += go-wtf
     SUBDIR += goaccess
     SUBDIR += goawk
+    SUBDIR += gomi
     SUBDIR += gomplate
     SUBDIR += google-compute-engine-oslogin
     SUBDIR += gotop
@@ -1118,6 +1116,7 @@
     SUBDIR += rubygem-capistrano-harrow
     SUBDIR += rubygem-chef
     SUBDIR += rubygem-chef-api
+    SUBDIR += rubygem-chef-bin
     SUBDIR += rubygem-chef-config
     SUBDIR += rubygem-chef-config12
     SUBDIR += rubygem-chef-dk
