@@ -1,0 +1,3 @@
+bin/doorbell
+etc/doorbell/config.json
+share/doorbell/DoorBell.wav

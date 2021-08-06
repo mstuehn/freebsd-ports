@@ -1,0 +1,24 @@
+#!/bin/sh
+
+OVERLAY_VAR="fdt_overlays"
+OVERLAY_VAL="ti_pruss.dtbo"
+OVERLAY_CONF="/boot/loader.conf"
+
+remove_overlay()
+{
+
+    # TODO: does not handle leading commata
+    if sed -I.bak "/^${OVERLAY_VAR}=\"[a-zA-Z0-9]*/s/,*${OVERLAY_VAL}//g" ${OVERLAY_CONF} ; then
+        rm ${OVERLAY_CONF}.bak
+    else
+        echo "Error during ressettin ${OVERLAY_VAR}"
+    fi
+}
+
+case $2 in
+POST-DEINSTALL)
+        sysrc -x doorbell_enable
+        remove_overlay
+        exit 0
+        ;;
+esac

@@ -1,0 +1,21 @@
+#!/bin/sh
+#
+# PROVIDE: bell
+# REQUIRE: DAEMON
+# KEYWORD:
+
+. /etc/rc.subr
+
+name="doorbell"
+rcvar="doorbell_enable"
+#bell_user="bell"
+bell_command="%%PREFIX%%/bin/doorbell"
+pidfile="/var/run/${name}.pid"
+command="/usr/sbin/daemon"
+command_args="-P ${pidfile} -r -f ${bell_command}"
+
+load_rc_config $name
+: ${doorbell_enable:=no}
+
+run_rc_command "$1"
+

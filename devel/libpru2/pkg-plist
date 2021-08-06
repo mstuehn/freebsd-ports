@@ -1,0 +1,5 @@
+include/libpru.h
+lib/libpru.so.3
+lib/libpru.so
+sbin/pructl
+sbin/prudbg

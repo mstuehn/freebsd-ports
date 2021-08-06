@@ -1,0 +1,8 @@
+#!/bin/sh
+
+case $2 in
+POST-DEINSTALL)
+        sysrc -x smartmeter_enable
+        exit 0
+        ;;
+esac

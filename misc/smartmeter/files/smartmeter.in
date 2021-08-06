@@ -1,0 +1,20 @@
+#!/bin/sh
+#
+# PROVIDE: smartmeter
+# REQUIRE: DAEMON
+# KEYWORD:
+
+. /etc/rc.subr
+
+name="smartmeter"
+rcvar="smartmeter_enable"
+smartmeter_command="%%PREFIX%%/bin/smartmeter"
+pidfile="/var/run/${name}.pid"
+command="/usr/sbin/daemon"
+command_args="-P ${pidfile} -r -f ${smartmeter_command}"
+
+load_rc_config $name
+: ${smartmeter_enable:=no}
+
+run_rc_command "$1"
+
