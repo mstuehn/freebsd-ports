@@ -23,6 +23,7 @@ USE_RC_SUBR=	${PORTNAME:S/-/_/}
 do-install:
 	${MKDIR} ${STAGEDIR}/${PREFIX}/etc/smartmeter/
 	${INSTALL_DATA} ${WRKSRC}/config.json ${STAGEDIR}/${PREFIX}/etc/smartmeter/
+	${INSTALL_DATA} files/usb-serial.conf ${STAGEDIR}/${PREFIX}/etc/devd/
 	${INSTALL_PROGRAM} ${WRKSRC}/smartmeter ${STAGEDIR}/${PREFIX}/bin/smartmeter
 
 .include <bsd.port.mk>
