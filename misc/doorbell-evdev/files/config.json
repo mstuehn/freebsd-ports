@@ -1,0 +1,17 @@
+{
+    "base_topic" : "myhouse/bell/otherbell",
+    "input": {
+        "vendor" : "0x1b4f",
+        "product" : "0x9206"
+    },
+    "mqtt-configuration": {
+        "server": "mqtt",
+        "port": 1883,
+        "keepalive": 60,
+        "qos": 0
+    },
+    "sound-configuration": {
+        "device": "/dev/dsp",
+        "file_to_play" : "/usr/local/share/doorbell/DoorBell.wav"
+    }
+}

@@ -1,13 +1,13 @@
 # $FreeBSD$
 
 PORTNAME=	doorbell-evdev
-PORTVERSION=	g20210807
+PORTVERSION=	g20210808
 CATEGORIES=	misc
 
 USE_GITHUB=     yes
 GH_ACCOUNT=     mstuehn
 GH_PROJECT=     doorbell
-GH_TAGNAME=	1ae280a
+GH_TAGNAME=	faa685
 
 MAINTAINER=	freebsd@justmail.de
 COMMENT=	Application for playing doorbell sound on NanoPI
@@ -28,7 +28,7 @@ do-install:
 	${MKDIR} ${STAGEDIR}/${PREFIX}/share/doorbell/
 	${INSTALL_DATA} ${WRKSRC}/data/DoorBell.wav ${STAGEDIR}/${PREFIX}/share/doorbell/
 	${MKDIR} ${STAGEDIR}/${PREFIX}/etc/doorbell/
-	${INSTALL_DATA} ${WRKSRC}/src/config.json ${STAGEDIR}/${PREFIX}/etc/doorbell/
+	${INSTALL_DATA} files/config.json ${STAGEDIR}/${PREFIX}/etc/doorbell/
 	${INSTALL_PROGRAM} ${WRKSRC}/bin/doorbell ${STAGEDIR}/${PREFIX}/bin/doorbell
 
 .include <bsd.port.mk>
