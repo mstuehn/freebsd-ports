@@ -7,7 +7,7 @@ CATEGORIES=	misc
 USE_GITHUB=     yes
 GH_ACCOUNT=     mstuehn
 GH_PROJECT=     doorbell
-GH_TAGNAME=	27f0b0
+GH_TAGNAME=	d17abe
 
 MAINTAINER=	freebsd@justmail.de
 COMMENT=	Application for playing doorbell sound on NanoPI
