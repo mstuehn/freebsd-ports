@@ -1,13 +1,13 @@
 # $FreeBSD$
 
 PORTNAME=	doorbell-evdev
-PORTVERSION=	g20210809
+PORTVERSION=	g20210820
 CATEGORIES=	misc
 
 USE_GITHUB=     yes
 GH_ACCOUNT=     mstuehn
 GH_PROJECT=     doorbell
-GH_TAGNAME=	d17abe
+GH_TAGNAME=	0c1c05
 
 MAINTAINER=	freebsd@justmail.de
 COMMENT=	Application for playing doorbell sound on NanoPI
