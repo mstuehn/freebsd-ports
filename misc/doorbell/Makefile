@@ -7,7 +7,7 @@ CATEGORIES=	misc
 USE_GITHUB=     yes
 GH_ACCOUNT=     mstuehn
 GH_PROJECT=     doorbell
-GH_TAGNAME=	3eb015
+GH_TAGNAME=	8d15e8
 
 MAINTAINER=	freebsd@justmail.de
 COMMENT=	Application for playing doorbell sound
