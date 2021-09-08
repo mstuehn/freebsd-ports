@@ -7,7 +7,7 @@ CATEGORIES=		misc
 USE_GITHUB=     yes
 GH_ACCOUNT=     mstuehn
 GH_PROJECT=    	pulsemeter
-GH_TAGNAME=	0fc794c
+GH_TAGNAME=	1d9153d
 
 MAINTAINER=	freebsd@justmail.de
 COMMENT=	Collect data from HID-device and send via mqtt
