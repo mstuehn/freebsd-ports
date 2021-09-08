@@ -1,0 +1,4 @@
+Application wich monitors an HID and converts Key-Events into
+JSON-messages sent over MQTT
+
+WWW: https://github.com/mstuehn/pulsemeter
