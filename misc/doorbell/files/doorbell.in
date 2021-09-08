@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # PROVIDE: bell
-# REQUIRE: networking
+# REQUIRE: DAEMON
 # KEYWORD:
 
 . /etc/rc.subr

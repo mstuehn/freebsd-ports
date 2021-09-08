@@ -1,4 +1,5 @@
-Doorbell is an application designed on the PRU found on the 
-Beaglebone Black
+Doorbell is an application which monitors an HID for certain
+key-events and emits JSON-messages over MQTT and plays sounds
+when this events occur
 
 WWW: https://github.com/mstuehn/doorbell
