@@ -1,4 +1,4 @@
-Doorbell is an application designed on the PRU found on the 
-Beaglebone Black
+Smartmeter polls information via modbus-rtu and publishes 
+those information as JSON package via MQTT
 
-WWW: https://github.com/mstuehn/doorbell
+WWW: https://github.com/mstuehn/smartmeter

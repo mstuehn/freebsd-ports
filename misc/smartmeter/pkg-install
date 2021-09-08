@@ -1,9 +1,0 @@
-#!/bin/sh
-
-case $2 in
-POST-INSTALL)
-        sysrc smartmeter_enable=yes
-        exit 0
-        ;;
-esac
-
