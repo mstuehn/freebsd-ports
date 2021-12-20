@@ -1,13 +1,13 @@
 # $FreeBSD$
 
 PORTNAME=	doorbell
-PORTVERSION=	g20210908
+PORTVERSION=	g20211220
 CATEGORIES=	misc
 
 USE_GITHUB=     yes
 GH_ACCOUNT=     mstuehn
 GH_PROJECT=     doorbell
-GH_TAGNAME=	8d15e8
+GH_TAGNAME=	8240f9
 
 MAINTAINER=	freebsd@justmail.de
 COMMENT=	Application for playing doorbell sound
