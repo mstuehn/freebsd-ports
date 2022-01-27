@@ -1,5 +1,5 @@
 {
-    "base_topic" : "myhouse/bell/otherbell",
+    "base_topic" : "house/bell/main",
     "input": {
         "vendor" : "0x1b4f",
         "product" : "0x9206"
