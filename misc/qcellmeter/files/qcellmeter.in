@@ -8,7 +8,7 @@
 
 name="qcellmeter"
 rcvar="qcellmeter_enable"
-qcellmeter_command="%%PREFIX%%/bin/qcellmeter"
+qcellmeter_command="%%PREFIX%%/bin/qcellmeter -c %%PREFIX%%/etc/qcellmeter/config.json"
 pidfile="/var/run/${name}.pid"
 command="/usr/sbin/daemon"
 command_args="-P ${pidfile} -r -f ${qcellmeter_command}"
