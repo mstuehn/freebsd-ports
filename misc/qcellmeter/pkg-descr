@@ -1,0 +1,4 @@
+Smartmeter polls information via modbus-rtu and publishes 
+those information as JSON package via MQTT
+
+WWW: https://github.com/mstuehn/smartmeter

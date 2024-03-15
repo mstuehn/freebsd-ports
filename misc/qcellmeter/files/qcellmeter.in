@@ -1,0 +1,20 @@
+#!/bin/sh
+#
+# PROVIDE: qcellmeter
+# REQUIRE: DAEMON
+# KEYWORD:
+
+. /etc/rc.subr
+
+name="qcellmeter"
+rcvar="qcellmeter_enable"
+qcellmeter_command="%%PREFIX%%/bin/qcellmeter"
+pidfile="/var/run/${name}.pid"
+command="/usr/sbin/daemon"
+command_args="-P ${pidfile} -r -f ${qcellmeter_command}"
+
+load_rc_config $name
+: ${qcellmeter_enable:=no}
+
+run_rc_command "$1"
+
